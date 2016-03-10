@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C43F88A41C90D7AD00FE9262 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D6EFCE1C8F384000FEB8BA /* libglfw.3.1.dylib */; };
+		C4AAD5541C919B0F00C25865 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */; };
+		C4AAD5551C919B0F00C25865 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5531C919B0F00C25865 /* libgtest.a */; };
 		C4C1A94A1C90214400753C31 /* GLattriblocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C1A9481C90214400753C31 /* GLattriblocation.cpp */; };
 		C4C1A94B1C90214400753C31 /* GLattriblocation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4C1A9491C90214400753C31 /* GLattriblocation.hpp */; };
 		C4D6EFBE1C8F32D800FEB8BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFBD1C8F32D800FEB8BA /* main.cpp */; };
 		C4D6EFC61C8F338500FEB8BA /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
 		C4D6EFC71C8F338500FEB8BA /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
 		C4D6EFC81C8F338D00FEB8BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
-		C4D6EFCA1C8F34EC00FEB8BA /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D6EFC91C8F34EC00FEB8BA /* libgtest.a */; };
 		C4D6EFCD1C8F368800FEB8BA /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */; };
 		C4E4E6271C8F23E400AC2C72 /* ChaosGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6261C8F23E400AC2C72 /* ChaosGL.hpp */; };
 		C4E4E62B1C8F23E400AC2C72 /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E62A1C8F23E400AC2C72 /* ChaosGL.cpp */; };
@@ -92,14 +92,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
 		C4C1A9481C90214400753C31 /* GLattriblocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLattriblocation.cpp; path = ChaosGL/GLattriblocation.cpp; sourceTree = "<group>"; };
 		C4C1A9491C90214400753C31 /* GLattriblocation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GLattriblocation.hpp; path = ChaosGL/GLattriblocation.hpp; sourceTree = "<group>"; };
 		C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D6EFBD1C8F32D800FEB8BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C4D6EFC91C8F34EC00FEB8BA /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
 		C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
 		C4D6EFCC1C8F368800FEB8BA /* ChaosGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosGL.hpp; sourceTree = "<group>"; };
-		C4D6EFCE1C8F384000FEB8BA /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		C4D6EFD11C8F3CBC00FEB8BA /* main.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.vs.glsl; sourceTree = "<group>"; };
 		C4D6EFD31C8F3FE600FEB8BA /* main.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.fs.glsl; sourceTree = "<group>"; };
 		C4D6EFD91C8F7EA300FEB8BA /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Drawable.h; path = ChaosGL/Drawable.h; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43F88A41C90D7AD00FE9262 /* libglfw.3.1.dylib in Frameworks */,
-				C4D6EFCA1C8F34EC00FEB8BA /* libgtest.a in Frameworks */,
+				C4AAD5541C919B0F00C25865 /* libglfw.3.1.dylib in Frameworks */,
+				C4AAD5551C919B0F00C25865 /* libgtest.a in Frameworks */,
 				C4D6EFC81C8F338D00FEB8BA /* OpenGL.framework in Frameworks */,
 				C4D6EFC61C8F338500FEB8BA /* libChaosGL.dylib in Frameworks */,
 				C4D6EFC71C8F338500FEB8BA /* libChaosCore.dylib in Frameworks */,
@@ -222,8 +222,8 @@
 		C4E4E61A1C8F23E400AC2C72 = {
 			isa = PBXGroup;
 			children = (
-				C4D6EFCE1C8F384000FEB8BA /* libglfw.3.1.dylib */,
-				C4D6EFC91C8F34EC00FEB8BA /* libgtest.a */,
+				C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */,
+				C4AAD5531C919B0F00C25865 /* libgtest.a */,
 				C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */,
 				C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */,
 				C4C1A8D11C9020AC00753C31 /* ChaosGL */,

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "93CCD311B21D40CA5DDB27DD6C4D6EF706A315B3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93CCD311B21D40CA5DDB27DD6C4D6EF706A315B3" : 0,
+    "656B614F13419EF3DB4660CCF49EAB3898D9F2C5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C1EFC1BA-D4D5-432D-AA26-280A11B45244",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93CCD311B21D40CA5DDB27DD6C4D6EF706A315B3" : "ChaosGL\/",
+    "656B614F13419EF3DB4660CCF49EAB3898D9F2C5" : "ChaosCore\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ChaosGL",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ChaosGL.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chaosarts\/ChaosCore.cpp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "656B614F13419EF3DB4660CCF49EAB3898D9F2C5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chaosarts\/ChaosGL.cpp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93CCD311B21D40CA5DDB27DD6C4D6EF706A315B3"
+    }
+  ]
+}
