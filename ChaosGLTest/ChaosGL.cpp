@@ -49,7 +49,7 @@ void ChaosGL::TearDown() {
 ca::gl::VertexShader* ChaosGL::prepareVertexShader()
 {
 	ca::gl::VertexShader* shader = new ca::gl::VertexShader();
-	shader->addSource("/Users/chaos/Development/c++/chaosarts/ChaosGL/ChaosGLTest/main.vs.glsl");
+	shader->addSource("/Users/chaos/Development/Sources/c++/chaosarts/ChaosGL/ChaosGLTest/main.vs.glsl");
 	return shader;
 }
 
@@ -57,7 +57,7 @@ ca::gl::VertexShader* ChaosGL::prepareVertexShader()
 ca::gl::FragmentShader* ChaosGL::prepareFragmentShader()
 {
 	ca::gl::FragmentShader* shader = new ca::gl::FragmentShader();
-	shader->addSource("/Users/chaos/Development/c++/chaosarts/ChaosGL/ChaosGLTest/main.fs.glsl");
+	shader->addSource("/Users/chaos/Development/Sources/c++/chaosarts/ChaosGL/ChaosGLTest/main.fs.glsl");
 	return shader;
 }
 
