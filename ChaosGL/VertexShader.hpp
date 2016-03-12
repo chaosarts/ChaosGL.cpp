@@ -8,7 +8,7 @@
 #ifndef _ChaosGL_VertexShader_h_
 #define _ChaosGL_VertexShader_h_
 
-#include "Shader.h"
+#include "Shader.hpp"
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 

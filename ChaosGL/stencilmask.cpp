@@ -5,20 +5,20 @@
  *      Author: chaos
  */
 
-#include "GLstencilmask.h"
+#include "stencilmask.hpp"
 
 namespace ca
 {
 	namespace gl
 	{
 
-		GLstencilmask::GLstencilmask(GLint stencil) : GLclearmask(GL_STENCIL_BUFFER_BIT), stencil(stencil) {}
+		stencilmask::stencilmask(GLint stencil) : clearmask(GL_STENCIL_BUFFER_BIT), stencil(stencil) {}
 
 
-		GLstencilmask::~GLstencilmask() {}
+		stencilmask::~stencilmask() {}
 
 
-		void GLstencilmask::clear()
+		void stencilmask::clear()
 		{
 			glClearStencil(stencil);
 		}

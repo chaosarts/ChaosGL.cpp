@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "FragmentShader.h"
+#include "FragmentShader.hpp"
 
 namespace ca
 {

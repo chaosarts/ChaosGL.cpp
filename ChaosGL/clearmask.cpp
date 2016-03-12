@@ -5,15 +5,14 @@
  *      Author: chaos
  */
 
-#include "GLclearmask.h"
+#include "clearmask.hpp"
 
 namespace ca
 {
 	namespace gl
 	{
-
-		GLclearmask::GLclearmask (GLbitfield field) : field(field) {}
-		GLclearmask::~GLclearmask() {};
+		clearmask::clearmask (GLbitfield field) : field(field) {}
+		clearmask::~clearmask() {};
 
 	} /* namespace gl */
 } /* namespace ca */

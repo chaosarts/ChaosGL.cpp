@@ -8,7 +8,7 @@
 #ifndef _ChaosGL_Gldepthbit_h_
 #define _ChaosGL_Gldepthbit_h_
 
-#include "GLclearmask.h"
+#include "clearmask.hpp"
 
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
@@ -18,14 +18,14 @@ namespace ca
 	namespace gl
 	{
 
-		struct GLdepthmask: public GLclearmask
+		struct depthmask: public clearmask
 		{
 		public:
 			GLclampd depth;
 
-			GLdepthmask(GLclampd depth = 1);
+			depthmask(GLclampd depth = 1);
 
-			virtual ~GLdepthmask();
+			virtual ~depthmask();
 
 			virtual void clear ();
 		};

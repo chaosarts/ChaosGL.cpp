@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "GeometryShader.h"
+#include "GeometryShader.hpp"
 
 namespace ca
 {

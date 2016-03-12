@@ -14,7 +14,7 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 #include <ChaosCore/core.h>
-#include "Exception.h"
+#include "Exception.hpp"
 
 using namespace std;
 

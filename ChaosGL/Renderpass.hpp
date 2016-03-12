@@ -11,9 +11,9 @@
 #include <list>
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
-#include "GLcap.h"
-#include "GLclearmask.h"
-#include "Program.h"
+#include "cap.hpp"
+#include "clearmask.hpp"
+#include "Program.hpp"
 
 using namespace std;
 
@@ -29,10 +29,10 @@ namespace ca
 			Program* _program;
 			
 			/** Provides a list of bit masks to apply */
-			list<GLclearmask*> _bitmasks;
+			list<clearmask*> _bitmasks;
 
 			/** Provides a list of OpenGL server-side capabilities */
-			list<GLcap*> _caps;
+			list<cap*> _caps;
 
 		protected:
 			virtual void _render () = 0;
@@ -45,9 +45,9 @@ namespace ca
 
 			void render ();
 
-			void setCapability (GLcap* cap);
+			void setCapability (cap* cap);
 
-			void addBitmask (GLclearmask* bitmask);
+			void addBitmask (clearmask* bitmask);
 		};
 
 	} /* namespace gl */

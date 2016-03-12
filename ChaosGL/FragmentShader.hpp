@@ -5,19 +5,19 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Geometry_h_
-#define _ChaosGL_Geometry_h_
+#ifndef _ChaosGL_Fragment_h_
+#define _ChaosGL_Fragment_h_
 
+#include "Shader.hpp"
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
-#include "Shader.h"
 
 namespace ca
 {
 	namespace gl
 	{
 
-		class GeometryShader: public Shader
+		class FragmentShader: public Shader
 		{
 		public:
 
@@ -26,26 +26,26 @@ namespace ca
 			 * @param source The source string
 			 * @param length
 			 */
-			GeometryShader(const char* source, int length);
+			FragmentShader(const char* source, int length);
 
 
 			/**
 			 * Constructor with source as file
 			 * @param filename
 			 */
-			GeometryShader(const char* filename);
+			FragmentShader(const char* filename);
 
 
 			/**
 			 * Constructor with no source
 			 */
-			GeometryShader();
+			FragmentShader();
 
 
 			/**
 			 * Destructor
 			 */
-			virtual ~GeometryShader();
+			virtual ~FragmentShader();
 		};
 
 	} /* namespace gl */

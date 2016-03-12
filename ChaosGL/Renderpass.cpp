@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "Renderpass.h"
+#include "Renderpass.hpp"
 
 namespace ca
 {
@@ -17,7 +17,7 @@ namespace ca
 		void Renderpass::render ()
 		{
 			{
-				list<GLclearmask*>::iterator it = _bitmasks.begin();
+				list<clearmask*>::iterator it = _bitmasks.begin();
 				GLbitfield mask = 0;
 
 				while (it != _bitmasks.end())
@@ -30,7 +30,7 @@ namespace ca
 			}
 
 			{
-				list<GLcap*>::iterator it = _caps.begin();
+				list<cap*>::iterator it = _caps.begin();
 				while (it != _caps.end())
 				{
 					if ((*it)->enabled) glEnable((*it)->name);
@@ -44,13 +44,13 @@ namespace ca
 		}
 
 
-		void Renderpass::setCapability (GLcap* cap)
+		void Renderpass::setCapability (cap* cap)
 		{
 			_caps.push_back(cap);
 		}
 
 
-		void Renderpass::addBitmask(GLclearmask* bitmask)
+		void Renderpass::addBitmask(clearmask* bitmask)
 		{
 			_bitmasks.push_back(bitmask);
 		}

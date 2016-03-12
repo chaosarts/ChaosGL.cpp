@@ -9,7 +9,7 @@
 #ifndef _ChaosGL_Drawable_h
 #define _ChaosGL_Drawable_h
 
-#include "Program.h"
+#include "Program.hpp"
 
 namespace ca
 {

@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "VertexShader.h"
+#include "VertexShader.hpp"
 
 namespace ca
 {

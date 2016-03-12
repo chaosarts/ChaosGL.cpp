@@ -1,20 +1,20 @@
 /*
- * GLcap.cpp
+ * cap.cpp
  *
  *  Created on: 07.03.2016
  *      Author: chaos
  */
 
-#include "GLcap.h"
+#include "cap.hpp"
 
 namespace ca
 {
 	namespace gl
 	{
 
-		GLcap::GLcap(GLenum name, bool enable) : name(name), enabled(enable) {}
+		cap::cap(GLenum name, bool enable) : name(name), enabled(enable) {}
 
-		GLcap::~GLcap() {}
+		cap::~cap() {}
 
 	} /* namespace gl */
 } /* namespace ca */

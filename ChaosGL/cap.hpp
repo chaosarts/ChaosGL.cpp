@@ -1,5 +1,5 @@
 /*
- * GLcap.h
+ * cap.h
  *
  *  Created on: 07.03.2016
  *      Author: chaos
@@ -16,20 +16,20 @@ namespace ca
 	namespace gl
 	{
 
-		class GLcap
+		class cap
 		{
 		protected:
-			GLcap(GLenum name, bool enable = true);
+			cap(GLenum name, bool enable = true);
 		public:
+			
+			/** Indicates whether it is enabled or not */
+			GLboolean enabled;
 
 			/** Provides the name of the capability */
 			const GLenum name;
 
-			/** Indicates whether it is enabled or not */
-			GLboolean enabled;
-
 			/** Destructor */
-			virtual ~GLcap();
+			virtual ~cap();
 		};
 
 	} /* namespace gl */

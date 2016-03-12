@@ -5,20 +5,20 @@
  *      Author: chaos
  */
 
-#include "GLdepthmask.h"
+#include "depthmask.hpp"
 
 namespace ca
 {
 	namespace gl
 	{
 
-		GLdepthmask::GLdepthmask(GLclampd depth) : GLclearmask(GL_DEPTH_BUFFER_BIT), depth(depth) {}
+		depthmask::depthmask(GLclampd depth) : clearmask(GL_DEPTH_BUFFER_BIT), depth(depth) {}
 
 
-		GLdepthmask::~GLdepthmask() {}
+		depthmask::~depthmask() {}
 
 
-		void GLdepthmask::clear()
+		void depthmask::clear()
 		{
 			glClearDepth(depth);
 		}

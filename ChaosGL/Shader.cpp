@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "Shader.h"
+#include "Shader.hpp"
 
 namespace ca
 {

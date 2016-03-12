@@ -8,7 +8,7 @@
 #ifndef _ChaosGL_Glstencilbit_h_
 #define _ChaosGL_Glstencilbit_h_
 
-#include "GLclearmask.h"
+#include "clearmask.hpp"
 
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
@@ -18,14 +18,14 @@ namespace ca
 	namespace gl
 	{
 
-		struct GLstencilmask : public GLclearmask
+		struct stencilmask : public clearmask
 		{
 		public:
 			GLint stencil;
 
-			GLstencilmask(GLint stencil = 0);
+			stencilmask(GLint stencil = 0);
 
-			virtual ~GLstencilmask();
+			virtual ~stencilmask();
 
 			virtual void clear ();
 		};

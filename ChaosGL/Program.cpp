@@ -5,7 +5,7 @@
  *      Author: chaos
  */
 
-#include "Program.h"
+#include "Program.hpp"
 
 namespace ca
 {
@@ -20,6 +20,18 @@ namespace ca
 		}
 		
 		
+		GLuint Program::getId()
+		{
+			if (_id == 0)
+			{
+				_id = glCreateProgram();
+				if (_id == 0) ca::core::warn("<Program> Unable to create: Is there an OpenGL context initialized?");
+			}
+			
+			return _id;
+		}
+		
+		
 		GLint Program::link()
 		{
 			if (getLinkStatus() == GL_TRUE)
@@ -28,12 +40,7 @@ namespace ca
 			_attribLocationCache.clear();
 			_uniformLocationCache.clear();
 			
-			GLuint id = getId();
-			vector<GLuint>::iterator it = _shaders.begin();
-			while (it != _shaders.end())
-				glAttachShader(id, *it++);
-			
-			glLinkProgram(id);
+			glLinkProgram(getId());
 			
 			GLint error = glGetError();
 			ca::core::info("<Program> Result of 'link': %i", error);
@@ -56,17 +63,17 @@ namespace ca
 		}
 		
 		
-		void Program::attachShaders(GLuint shader)
+		void Program::attachShader (GLuint shader)
 		{
-			_shaders.push_back(shader);
+			glAttachShader(getId(), shader);
 		}
 		
 		
-		void Program::attachShaders(ca::gl::Shader *shader)
+		void Program::attachShader (ca::gl::Shader *shader)
 		{
 			try {
 				shader->compile();
-				attachShaders(shader->getId());
+				attachShader (shader->getId());
 			}
 			catch (ca::gl::Exception* e) {
 				ca::core::warn("<Program> Shader not attached to program: %s", e->message);
@@ -74,13 +81,26 @@ namespace ca
 		}
 		
 		
-		void Program::bindAttribLocation(GLuint index, const char* name)
+		void Program::detachShader (GLuint shader)
 		{
-			glBindAttribLocation(getId(), index, name);
+			glDetachShader(getId(), shader);
 		}
 		
 		
-		GLuint Program::getAttribLocation(const char *name)
+		void Program::detachShader (ca::gl::Shader *shader)
+		{
+			detachShader(shader->getId());
+		}
+		
+		
+		void Program::bindAttribLocation(GLuint index, const char* name)
+		{
+			glBindAttribLocation(getId(), index, name);
+			_attribLocationCache[name] = index;
+		}
+		
+		
+		GLint Program::getAttribLocation(const char *name)
 		{
 			map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
 			if (it != _attribLocationCache.end()) return it->second;
@@ -88,33 +108,21 @@ namespace ca
 			GLint index = glGetAttribLocation(getId(), name);
 			if (index < 0) ca::core::info("<Program> Attribute %s not found.", name);
 			else _attribLocationCache[name] = GLuint(index);
+			
 			return index;
 		}
 		
 		
-		
-		GLuint Program::getUniformLocation(const char *name)
+		GLint Program::getUniformLocation(const char *name)
 		{
-			map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
-			if (it != _attribLocationCache.end()) return it->second;
+			map<const char*, GLuint>::iterator it = _uniformLocationCache.find(name);
+			if (it != _uniformLocationCache.end()) return it->second;
 			
 			GLint index = glGetUniformLocation(getId(), name);
 			if (index < 0) ca::core::info("<Program> Uniform %s not found", name);
 			else _uniformLocationCache[name] = GLuint(index);
 			
 			return index;
-		}
-		
-		
-		GLuint Program::getId()
-		{
-			if (_id == 0)
-			{
-				_id = glCreateProgram();
-				if (_id == 0) ca::core::warn("<Program> Unable to create: Is there an OpenGL context initialized?");
-			}
-			
-			return _id;
 		}
 		
 		

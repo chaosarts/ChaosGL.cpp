@@ -8,7 +8,7 @@
 #ifndef _ChaosGL_Glcolorbit_h_
 #define _ChaosGL_Glcolorbit_h_
 
-#include "GLclearmask.h"
+#include "clearmask.hpp"
 
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
@@ -18,7 +18,7 @@ namespace ca
 	namespace gl
 	{
 
-		struct GLcolormask : public GLclearmask
+		struct colormask : public clearmask
 		{
 		public:
 			GLclampf red = 0;
@@ -26,10 +26,10 @@ namespace ca
 			GLclampf blue = 0;
 			GLclampf alpha = 1;
 
-			GLcolormask(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha = 1);
-			GLcolormask(GLclampf value, GLclampf alpha = 1);
-			GLcolormask(GLclampf alpha = 1);
-			virtual ~GLcolormask();
+			colormask(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha = 1);
+			colormask(GLclampf value, GLclampf alpha = 1);
+			colormask(GLclampf alpha = 1);
+			virtual ~colormask();
 			virtual void clear();
 		};
 

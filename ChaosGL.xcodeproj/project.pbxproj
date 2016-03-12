@@ -9,8 +9,16 @@
 /* Begin PBXBuildFile section */
 		C4AAD5541C919B0F00C25865 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */; };
 		C4AAD5551C919B0F00C25865 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5531C919B0F00C25865 /* libgtest.a */; };
-		C4C1A94A1C90214400753C31 /* GLattriblocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C1A9481C90214400753C31 /* GLattriblocation.cpp */; };
-		C4C1A94B1C90214400753C31 /* GLattriblocation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4C1A9491C90214400753C31 /* GLattriblocation.hpp */; };
+		C4AAD5E91C9449B300C25865 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4AAD5E81C9449B300C25865 /* main.cpp */; };
+		C4AAD5F11C9449F600C25865 /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
+		C4AAD5F41C9449FD00C25865 /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
+		C4AAD5F51C944A0500C25865 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
+		C4AAD5F61C944A1500C25865 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */; };
+		C4AAD5FD1C944A6E00C25865 /* attrib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4AAD5F91C944A6E00C25865 /* attrib.hpp */; };
+		C4AAD5FE1C944A6E00C25865 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4AAD5FA1C944A6E00C25865 /* Drawable.cpp */; };
+		C4AAD60D1C94660600C25865 /* size.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4AAD60B1C94660600C25865 /* size.hpp */; };
+		C4AAD60F1C946A0100C25865 /* rect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4AAD60E1C946A0100C25865 /* rect.hpp */; };
+		C4AAD6121C946D5300C25865 /* Drawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4D6EFD91C8F7EA300FEB8BA /* Drawable.hpp */; };
 		C4D6EFBE1C8F32D800FEB8BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFBD1C8F32D800FEB8BA /* main.cpp */; };
 		C4D6EFC61C8F338500FEB8BA /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
 		C4D6EFC71C8F338500FEB8BA /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
@@ -18,28 +26,28 @@
 		C4D6EFCD1C8F368800FEB8BA /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */; };
 		C4E4E6271C8F23E400AC2C72 /* ChaosGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6261C8F23E400AC2C72 /* ChaosGL.hpp */; };
 		C4E4E62B1C8F23E400AC2C72 /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E62A1C8F23E400AC2C72 /* ChaosGL.cpp */; };
-		C4E4E6821C8F251C00AC2C72 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6661C8F251C00AC2C72 /* Buffer.h */; };
-		C4E4E6831C8F251C00AC2C72 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6671C8F251C00AC2C72 /* Exception.h */; };
-		C4E4E6841C8F251C00AC2C72 /* FragmentShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6681C8F251C00AC2C72 /* FragmentShader.h */; };
-		C4E4E6851C8F251C00AC2C72 /* GeometryShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6691C8F251C00AC2C72 /* GeometryShader.h */; };
-		C4E4E6861C8F251C00AC2C72 /* GLcap.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66A1C8F251C00AC2C72 /* GLcap.h */; };
-		C4E4E6871C8F251C00AC2C72 /* GLclearmask.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66B1C8F251C00AC2C72 /* GLclearmask.h */; };
-		C4E4E6881C8F251C00AC2C72 /* GLcolormask.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66C1C8F251C00AC2C72 /* GLcolormask.h */; };
-		C4E4E6891C8F251C00AC2C72 /* GLdepthmask.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66D1C8F251C00AC2C72 /* GLdepthmask.h */; };
-		C4E4E68A1C8F251C00AC2C72 /* GLstencilmask.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66E1C8F251C00AC2C72 /* GLstencilmask.h */; };
-		C4E4E68B1C8F251C00AC2C72 /* Program.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66F1C8F251C00AC2C72 /* Program.h */; };
-		C4E4E68C1C8F251C00AC2C72 /* Renderpass.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6701C8F251C00AC2C72 /* Renderpass.h */; };
-		C4E4E68E1C8F251C00AC2C72 /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6721C8F251C00AC2C72 /* Shader.h */; };
-		C4E4E68F1C8F251C00AC2C72 /* VertexShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6731C8F251C00AC2C72 /* VertexShader.h */; };
+		C4E4E6821C8F251C00AC2C72 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6661C8F251C00AC2C72 /* Buffer.hpp */; };
+		C4E4E6831C8F251C00AC2C72 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6671C8F251C00AC2C72 /* Exception.hpp */; };
+		C4E4E6841C8F251C00AC2C72 /* FragmentShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6681C8F251C00AC2C72 /* FragmentShader.hpp */; };
+		C4E4E6851C8F251C00AC2C72 /* GeometryShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6691C8F251C00AC2C72 /* GeometryShader.hpp */; };
+		C4E4E6861C8F251C00AC2C72 /* cap.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66A1C8F251C00AC2C72 /* cap.hpp */; };
+		C4E4E6871C8F251C00AC2C72 /* clearmask.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66B1C8F251C00AC2C72 /* clearmask.hpp */; };
+		C4E4E6881C8F251C00AC2C72 /* colormask.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66C1C8F251C00AC2C72 /* colormask.hpp */; };
+		C4E4E6891C8F251C00AC2C72 /* depthmask.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66D1C8F251C00AC2C72 /* depthmask.hpp */; };
+		C4E4E68A1C8F251C00AC2C72 /* stencilmask.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66E1C8F251C00AC2C72 /* stencilmask.hpp */; };
+		C4E4E68B1C8F251C00AC2C72 /* Program.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E66F1C8F251C00AC2C72 /* Program.hpp */; };
+		C4E4E68C1C8F251C00AC2C72 /* Renderpass.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6701C8F251C00AC2C72 /* Renderpass.hpp */; };
+		C4E4E68E1C8F251C00AC2C72 /* Shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6721C8F251C00AC2C72 /* Shader.hpp */; };
+		C4E4E68F1C8F251C00AC2C72 /* VertexShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6731C8F251C00AC2C72 /* VertexShader.hpp */; };
 		C4E4E6901C8F251C00AC2C72 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6741C8F251C00AC2C72 /* Buffer.cpp */; };
 		C4E4E6911C8F251C00AC2C72 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6751C8F251C00AC2C72 /* Exception.cpp */; };
 		C4E4E6921C8F251C00AC2C72 /* FragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6761C8F251C00AC2C72 /* FragmentShader.cpp */; };
 		C4E4E6931C8F251C00AC2C72 /* GeometryShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6771C8F251C00AC2C72 /* GeometryShader.cpp */; };
-		C4E4E6941C8F251C00AC2C72 /* GLcap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6781C8F251C00AC2C72 /* GLcap.cpp */; };
-		C4E4E6951C8F251C00AC2C72 /* GLclearmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6791C8F251C00AC2C72 /* GLclearmask.cpp */; };
-		C4E4E6961C8F251C00AC2C72 /* GLcolormask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67A1C8F251C00AC2C72 /* GLcolormask.cpp */; };
-		C4E4E6971C8F251C00AC2C72 /* GLdepthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67B1C8F251C00AC2C72 /* GLdepthmask.cpp */; };
-		C4E4E6981C8F251C00AC2C72 /* GLstencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67C1C8F251C00AC2C72 /* GLstencilmask.cpp */; };
+		C4E4E6941C8F251C00AC2C72 /* cap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6781C8F251C00AC2C72 /* cap.cpp */; };
+		C4E4E6951C8F251C00AC2C72 /* clearmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6791C8F251C00AC2C72 /* clearmask.cpp */; };
+		C4E4E6961C8F251C00AC2C72 /* colormask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67A1C8F251C00AC2C72 /* colormask.cpp */; };
+		C4E4E6971C8F251C00AC2C72 /* depthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67B1C8F251C00AC2C72 /* depthmask.cpp */; };
+		C4E4E6981C8F251C00AC2C72 /* stencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67C1C8F251C00AC2C72 /* stencilmask.cpp */; };
 		C4E4E6991C8F251C00AC2C72 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67D1C8F251C00AC2C72 /* Program.cpp */; };
 		C4E4E69A1C8F251C00AC2C72 /* Renderpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E67E1C8F251C00AC2C72 /* Renderpass.cpp */; };
 		C4E4E69C1C8F251C00AC2C72 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E6801C8F251C00AC2C72 /* Shader.cpp */; };
@@ -49,6 +57,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C4AAD5ED1C9449D300C25865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E4E61B1C8F23E400AC2C72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E4E6221C8F23E400AC2C72;
+			remoteInfo = ChaosGL;
+		};
+		C4AAD5EF1C9449D300C25865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E4E6471C8F24AA00AC2C72;
+			remoteInfo = ChaosCore;
+		};
 		C4D6EFC21C8F337A00FEB8BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E61B1C8F23E400AC2C72 /* Project object */;
@@ -80,6 +102,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C4AAD5E41C9449B300C25865 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		C4D6EFB91C8F32D800FEB8BA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,40 +125,44 @@
 /* Begin PBXFileReference section */
 		C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
-		C4C1A9481C90214400753C31 /* GLattriblocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLattriblocation.cpp; path = ChaosGL/GLattriblocation.cpp; sourceTree = "<group>"; };
-		C4C1A9491C90214400753C31 /* GLattriblocation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GLattriblocation.hpp; path = ChaosGL/GLattriblocation.hpp; sourceTree = "<group>"; };
+		C4AAD5E61C9449B300C25865 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AAD5E81C9449B300C25865 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4AAD5F91C944A6E00C25865 /* attrib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = attrib.hpp; path = ChaosGL/attrib.hpp; sourceTree = "<group>"; };
+		C4AAD5FA1C944A6E00C25865 /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Drawable.cpp; path = ChaosGL/Drawable.cpp; sourceTree = "<group>"; };
+		C4AAD60B1C94660600C25865 /* size.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = size.hpp; path = ChaosGL/size.hpp; sourceTree = "<group>"; };
+		C4AAD60E1C946A0100C25865 /* rect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = rect.hpp; path = ChaosGL/rect.hpp; sourceTree = "<group>"; };
 		C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D6EFBD1C8F32D800FEB8BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
 		C4D6EFCC1C8F368800FEB8BA /* ChaosGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosGL.hpp; sourceTree = "<group>"; };
 		C4D6EFD11C8F3CBC00FEB8BA /* main.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.vs.glsl; sourceTree = "<group>"; };
 		C4D6EFD31C8F3FE600FEB8BA /* main.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.fs.glsl; sourceTree = "<group>"; };
-		C4D6EFD91C8F7EA300FEB8BA /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Drawable.h; path = ChaosGL/Drawable.h; sourceTree = "<group>"; };
+		C4D6EFD91C8F7EA300FEB8BA /* Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Drawable.hpp; path = ChaosGL/Drawable.hpp; sourceTree = "<group>"; };
 		C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChaosGL.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4E6261C8F23E400AC2C72 /* ChaosGL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ChaosGL.hpp; path = ChaosGL/ChaosGL.hpp; sourceTree = "<group>"; };
 		C4E4E62A1C8F23E400AC2C72 /* ChaosGL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ChaosGL.cpp; path = ChaosGL/ChaosGL.cpp; sourceTree = "<group>"; };
-		C4E4E6661C8F251C00AC2C72 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = ChaosGL/Buffer.h; sourceTree = "<group>"; };
-		C4E4E6671C8F251C00AC2C72 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = ChaosGL/Exception.h; sourceTree = "<group>"; };
-		C4E4E6681C8F251C00AC2C72 /* FragmentShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FragmentShader.h; path = ChaosGL/FragmentShader.h; sourceTree = "<group>"; };
-		C4E4E6691C8F251C00AC2C72 /* GeometryShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometryShader.h; path = ChaosGL/GeometryShader.h; sourceTree = "<group>"; };
-		C4E4E66A1C8F251C00AC2C72 /* GLcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLcap.h; path = ChaosGL/GLcap.h; sourceTree = "<group>"; };
-		C4E4E66B1C8F251C00AC2C72 /* GLclearmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLclearmask.h; path = ChaosGL/GLclearmask.h; sourceTree = "<group>"; };
-		C4E4E66C1C8F251C00AC2C72 /* GLcolormask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLcolormask.h; path = ChaosGL/GLcolormask.h; sourceTree = "<group>"; };
-		C4E4E66D1C8F251C00AC2C72 /* GLdepthmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLdepthmask.h; path = ChaosGL/GLdepthmask.h; sourceTree = "<group>"; };
-		C4E4E66E1C8F251C00AC2C72 /* GLstencilmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLstencilmask.h; path = ChaosGL/GLstencilmask.h; sourceTree = "<group>"; };
-		C4E4E66F1C8F251C00AC2C72 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Program.h; path = ChaosGL/Program.h; sourceTree = "<group>"; };
-		C4E4E6701C8F251C00AC2C72 /* Renderpass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderpass.h; path = ChaosGL/Renderpass.h; sourceTree = "<group>"; };
-		C4E4E6721C8F251C00AC2C72 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = ChaosGL/Shader.h; sourceTree = "<group>"; };
-		C4E4E6731C8F251C00AC2C72 /* VertexShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexShader.h; path = ChaosGL/VertexShader.h; sourceTree = "<group>"; };
+		C4E4E6661C8F251C00AC2C72 /* Buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Buffer.hpp; path = ChaosGL/Buffer.hpp; sourceTree = "<group>"; };
+		C4E4E6671C8F251C00AC2C72 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Exception.hpp; path = ChaosGL/Exception.hpp; sourceTree = "<group>"; };
+		C4E4E6681C8F251C00AC2C72 /* FragmentShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FragmentShader.hpp; path = ChaosGL/FragmentShader.hpp; sourceTree = "<group>"; };
+		C4E4E6691C8F251C00AC2C72 /* GeometryShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GeometryShader.hpp; path = ChaosGL/GeometryShader.hpp; sourceTree = "<group>"; };
+		C4E4E66A1C8F251C00AC2C72 /* cap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cap.hpp; path = ChaosGL/cap.hpp; sourceTree = "<group>"; };
+		C4E4E66B1C8F251C00AC2C72 /* clearmask.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = clearmask.hpp; path = ChaosGL/clearmask.hpp; sourceTree = "<group>"; };
+		C4E4E66C1C8F251C00AC2C72 /* colormask.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = colormask.hpp; path = ChaosGL/colormask.hpp; sourceTree = "<group>"; };
+		C4E4E66D1C8F251C00AC2C72 /* depthmask.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = depthmask.hpp; path = ChaosGL/depthmask.hpp; sourceTree = "<group>"; };
+		C4E4E66E1C8F251C00AC2C72 /* stencilmask.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = stencilmask.hpp; path = ChaosGL/stencilmask.hpp; sourceTree = "<group>"; };
+		C4E4E66F1C8F251C00AC2C72 /* Program.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Program.hpp; path = ChaosGL/Program.hpp; sourceTree = "<group>"; };
+		C4E4E6701C8F251C00AC2C72 /* Renderpass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Renderpass.hpp; path = ChaosGL/Renderpass.hpp; sourceTree = "<group>"; };
+		C4E4E6721C8F251C00AC2C72 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Shader.hpp; path = ChaosGL/Shader.hpp; sourceTree = "<group>"; };
+		C4E4E6731C8F251C00AC2C72 /* VertexShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VertexShader.hpp; path = ChaosGL/VertexShader.hpp; sourceTree = "<group>"; };
 		C4E4E6741C8F251C00AC2C72 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buffer.cpp; path = ChaosGL/Buffer.cpp; sourceTree = "<group>"; };
 		C4E4E6751C8F251C00AC2C72 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Exception.cpp; path = ChaosGL/Exception.cpp; sourceTree = "<group>"; };
 		C4E4E6761C8F251C00AC2C72 /* FragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FragmentShader.cpp; path = ChaosGL/FragmentShader.cpp; sourceTree = "<group>"; };
 		C4E4E6771C8F251C00AC2C72 /* GeometryShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeometryShader.cpp; path = ChaosGL/GeometryShader.cpp; sourceTree = "<group>"; };
-		C4E4E6781C8F251C00AC2C72 /* GLcap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLcap.cpp; path = ChaosGL/GLcap.cpp; sourceTree = "<group>"; };
-		C4E4E6791C8F251C00AC2C72 /* GLclearmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLclearmask.cpp; path = ChaosGL/GLclearmask.cpp; sourceTree = "<group>"; };
-		C4E4E67A1C8F251C00AC2C72 /* GLcolormask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLcolormask.cpp; path = ChaosGL/GLcolormask.cpp; sourceTree = "<group>"; };
-		C4E4E67B1C8F251C00AC2C72 /* GLdepthmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLdepthmask.cpp; path = ChaosGL/GLdepthmask.cpp; sourceTree = "<group>"; };
-		C4E4E67C1C8F251C00AC2C72 /* GLstencilmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLstencilmask.cpp; path = ChaosGL/GLstencilmask.cpp; sourceTree = "<group>"; };
+		C4E4E6781C8F251C00AC2C72 /* cap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cap.cpp; path = ChaosGL/cap.cpp; sourceTree = "<group>"; };
+		C4E4E6791C8F251C00AC2C72 /* clearmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clearmask.cpp; path = ChaosGL/clearmask.cpp; sourceTree = "<group>"; };
+		C4E4E67A1C8F251C00AC2C72 /* colormask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = colormask.cpp; path = ChaosGL/colormask.cpp; sourceTree = "<group>"; };
+		C4E4E67B1C8F251C00AC2C72 /* depthmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = depthmask.cpp; path = ChaosGL/depthmask.cpp; sourceTree = "<group>"; };
+		C4E4E67C1C8F251C00AC2C72 /* stencilmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stencilmask.cpp; path = ChaosGL/stencilmask.cpp; sourceTree = "<group>"; };
 		C4E4E67D1C8F251C00AC2C72 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = ChaosGL/Program.cpp; sourceTree = "<group>"; };
 		C4E4E67E1C8F251C00AC2C72 /* Renderpass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderpass.cpp; path = ChaosGL/Renderpass.cpp; sourceTree = "<group>"; };
 		C4E4E6801C8F251C00AC2C72 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = ChaosGL/Shader.cpp; sourceTree = "<group>"; };
@@ -137,6 +172,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C4AAD5E31C9449B300C25865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AAD5F61C944A1500C25865 /* libglfw.3.1.dylib in Frameworks */,
+				C4AAD5F51C944A0500C25865 /* OpenGL.framework in Frameworks */,
+				C4AAD5F41C9449FD00C25865 /* libChaosGL.dylib in Frameworks */,
+				C4AAD5F11C9449F600C25865 /* libChaosCore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D6EFB81C8F32D800FEB8BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,40 +207,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C4C1A8D11C9020AC00753C31 /* ChaosGL */ = {
+		C4AAD5CC1C92FCCC00C25865 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4E6781C8F251C00AC2C72 /* cap.cpp */,
+				C4E4E66A1C8F251C00AC2C72 /* cap.hpp */,
+				C4E4E6791C8F251C00AC2C72 /* clearmask.cpp */,
+				C4E4E66B1C8F251C00AC2C72 /* clearmask.hpp */,
+				C4E4E67A1C8F251C00AC2C72 /* colormask.cpp */,
+				C4E4E66C1C8F251C00AC2C72 /* colormask.hpp */,
+				C4E4E67B1C8F251C00AC2C72 /* depthmask.cpp */,
+				C4E4E66D1C8F251C00AC2C72 /* depthmask.hpp */,
+				C4E4E67C1C8F251C00AC2C72 /* stencilmask.cpp */,
+				C4E4E66E1C8F251C00AC2C72 /* stencilmask.hpp */,
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
+		C4AAD5E71C9449B300C25865 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				C4AAD5E81C9449B300C25865 /* main.cpp */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		C4AAD5FF1C944A7E00C25865 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				C4E4E6741C8F251C00AC2C72 /* Buffer.cpp */,
-				C4E4E6661C8F251C00AC2C72 /* Buffer.h */,
+				C4E4E6661C8F251C00AC2C72 /* Buffer.hpp */,
 				C4E4E62A1C8F23E400AC2C72 /* ChaosGL.cpp */,
 				C4E4E6261C8F23E400AC2C72 /* ChaosGL.hpp */,
+				C4AAD5FA1C944A6E00C25865 /* Drawable.cpp */,
+				C4D6EFD91C8F7EA300FEB8BA /* Drawable.hpp */,
 				C4E4E6751C8F251C00AC2C72 /* Exception.cpp */,
-				C4E4E6671C8F251C00AC2C72 /* Exception.h */,
+				C4E4E6671C8F251C00AC2C72 /* Exception.hpp */,
 				C4E4E6761C8F251C00AC2C72 /* FragmentShader.cpp */,
-				C4E4E6681C8F251C00AC2C72 /* FragmentShader.h */,
+				C4E4E6681C8F251C00AC2C72 /* FragmentShader.hpp */,
 				C4E4E6771C8F251C00AC2C72 /* GeometryShader.cpp */,
-				C4E4E6691C8F251C00AC2C72 /* GeometryShader.h */,
-				C4E4E6781C8F251C00AC2C72 /* GLcap.cpp */,
-				C4E4E66A1C8F251C00AC2C72 /* GLcap.h */,
-				C4E4E6791C8F251C00AC2C72 /* GLclearmask.cpp */,
-				C4E4E66B1C8F251C00AC2C72 /* GLclearmask.h */,
-				C4E4E67A1C8F251C00AC2C72 /* GLcolormask.cpp */,
-				C4E4E66C1C8F251C00AC2C72 /* GLcolormask.h */,
-				C4E4E67B1C8F251C00AC2C72 /* GLdepthmask.cpp */,
-				C4E4E66D1C8F251C00AC2C72 /* GLdepthmask.h */,
-				C4E4E67C1C8F251C00AC2C72 /* GLstencilmask.cpp */,
-				C4E4E66E1C8F251C00AC2C72 /* GLstencilmask.h */,
+				C4E4E6691C8F251C00AC2C72 /* GeometryShader.hpp */,
 				C4E4E67D1C8F251C00AC2C72 /* Program.cpp */,
-				C4E4E66F1C8F251C00AC2C72 /* Program.h */,
+				C4E4E66F1C8F251C00AC2C72 /* Program.hpp */,
 				C4E4E67E1C8F251C00AC2C72 /* Renderpass.cpp */,
-				C4E4E6701C8F251C00AC2C72 /* Renderpass.h */,
-				C4D6EFD91C8F7EA300FEB8BA /* Drawable.h */,
+				C4E4E6701C8F251C00AC2C72 /* Renderpass.hpp */,
 				C4E4E6801C8F251C00AC2C72 /* Shader.cpp */,
-				C4E4E6721C8F251C00AC2C72 /* Shader.h */,
+				C4E4E6721C8F251C00AC2C72 /* Shader.hpp */,
 				C4E4E6811C8F251C00AC2C72 /* VertexShader.cpp */,
-				C4E4E6731C8F251C00AC2C72 /* VertexShader.h */,
-				C4C1A9481C90214400753C31 /* GLattriblocation.cpp */,
-				C4C1A9491C90214400753C31 /* GLattriblocation.hpp */,
+				C4E4E6731C8F251C00AC2C72 /* VertexShader.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C4AAD6101C946C1500C25865 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C4AAD5F91C944A6E00C25865 /* attrib.hpp */,
+				C4AAD60E1C946A0100C25865 /* rect.hpp */,
+				C4AAD60B1C94660600C25865 /* size.hpp */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		C4AAD6161C946FC300C25865 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		C4C1A8D11C9020AC00753C31 /* ChaosGL */ = {
+			isa = PBXGroup;
+			children = (
+				C4AAD6161C946FC300C25865 /* Functions */,
+				C4AAD6101C946C1500C25865 /* Interfaces */,
+				C4AAD5FF1C944A7E00C25865 /* Classes */,
+				C4AAD5CC1C92FCCC00C25865 /* Structs */,
 			);
 			name = ChaosGL;
 			sourceTree = "<group>";
@@ -228,6 +316,7 @@
 				C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */,
 				C4C1A8D11C9020AC00753C31 /* ChaosGL */,
 				C4D6EFBC1C8F32D800FEB8BA /* ChaosGLTest */,
+				C4AAD5E71C9449B300C25865 /* Playground */,
 				C4E4E6241C8F23E400AC2C72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -237,6 +326,7 @@
 			children = (
 				C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */,
 				C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */,
+				C4AAD5E61C9449B300C25865 /* Playground */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,27 +346,49 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C1A94B1C90214400753C31 /* GLattriblocation.hpp in Headers */,
-				C4E4E6831C8F251C00AC2C72 /* Exception.h in Headers */,
-				C4E4E6891C8F251C00AC2C72 /* GLdepthmask.h in Headers */,
-				C4E4E68C1C8F251C00AC2C72 /* Renderpass.h in Headers */,
-				C4E4E6871C8F251C00AC2C72 /* GLclearmask.h in Headers */,
-				C4E4E68B1C8F251C00AC2C72 /* Program.h in Headers */,
-				C4E4E6881C8F251C00AC2C72 /* GLcolormask.h in Headers */,
-				C4E4E6851C8F251C00AC2C72 /* GeometryShader.h in Headers */,
-				C4E4E6821C8F251C00AC2C72 /* Buffer.h in Headers */,
-				C4E4E6841C8F251C00AC2C72 /* FragmentShader.h in Headers */,
-				C4E4E68F1C8F251C00AC2C72 /* VertexShader.h in Headers */,
-				C4E4E68E1C8F251C00AC2C72 /* Shader.h in Headers */,
-				C4E4E6861C8F251C00AC2C72 /* GLcap.h in Headers */,
+				C4AAD6121C946D5300C25865 /* Drawable.hpp in Headers */,
+				C4E4E6831C8F251C00AC2C72 /* Exception.hpp in Headers */,
+				C4AAD5FD1C944A6E00C25865 /* attrib.hpp in Headers */,
+				C4E4E6891C8F251C00AC2C72 /* depthmask.hpp in Headers */,
+				C4E4E68C1C8F251C00AC2C72 /* Renderpass.hpp in Headers */,
+				C4E4E6871C8F251C00AC2C72 /* clearmask.hpp in Headers */,
+				C4AAD60F1C946A0100C25865 /* rect.hpp in Headers */,
+				C4E4E68B1C8F251C00AC2C72 /* Program.hpp in Headers */,
+				C4E4E6881C8F251C00AC2C72 /* colormask.hpp in Headers */,
+				C4E4E6851C8F251C00AC2C72 /* GeometryShader.hpp in Headers */,
+				C4E4E6821C8F251C00AC2C72 /* Buffer.hpp in Headers */,
+				C4E4E6841C8F251C00AC2C72 /* FragmentShader.hpp in Headers */,
+				C4E4E68F1C8F251C00AC2C72 /* VertexShader.hpp in Headers */,
+				C4E4E68E1C8F251C00AC2C72 /* Shader.hpp in Headers */,
+				C4E4E6861C8F251C00AC2C72 /* cap.hpp in Headers */,
 				C4E4E6271C8F23E400AC2C72 /* ChaosGL.hpp in Headers */,
-				C4E4E68A1C8F251C00AC2C72 /* GLstencilmask.h in Headers */,
+				C4AAD60D1C94660600C25865 /* size.hpp in Headers */,
+				C4E4E68A1C8F251C00AC2C72 /* stencilmask.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C4AAD5E51C9449B300C25865 /* Playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AAD5EA1C9449B300C25865 /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildPhases = (
+				C4AAD5E21C9449B300C25865 /* Sources */,
+				C4AAD5E31C9449B300C25865 /* Frameworks */,
+				C4AAD5E41C9449B300C25865 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AAD5EE1C9449D300C25865 /* PBXTargetDependency */,
+				C4AAD5F01C9449D300C25865 /* PBXTargetDependency */,
+			);
+			name = Playground;
+			productName = Playground;
+			productReference = C4AAD5E61C9449B300C25865 /* Playground */;
+			productType = "com.apple.product-type.tool";
+		};
 		C4D6EFBA1C8F32D800FEB8BA /* ChaosGLTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D6EFC11C8F32D800FEB8BA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */;
@@ -323,6 +435,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Fu Lam Diep";
 				TargetAttributes = {
+					C4AAD5E51C9449B300C25865 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					C4D6EFBA1C8F32D800FEB8BA = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -351,6 +466,7 @@
 			targets = (
 				C4E4E6221C8F23E400AC2C72 /* ChaosGL */,
 				C4D6EFBA1C8F32D800FEB8BA /* ChaosGLTest */,
+				C4AAD5E51C9449B300C25865 /* Playground */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +482,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C4AAD5E21C9449B300C25865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AAD5E91C9449B300C25865 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D6EFB71C8F32D800FEB8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,22 +508,32 @@
 				C4E4E6991C8F251C00AC2C72 /* Program.cpp in Sources */,
 				C4E4E62B1C8F23E400AC2C72 /* ChaosGL.cpp in Sources */,
 				C4E4E69C1C8F251C00AC2C72 /* Shader.cpp in Sources */,
-				C4C1A94A1C90214400753C31 /* GLattriblocation.cpp in Sources */,
 				C4E4E6931C8F251C00AC2C72 /* GeometryShader.cpp in Sources */,
-				C4E4E6971C8F251C00AC2C72 /* GLdepthmask.cpp in Sources */,
-				C4E4E6941C8F251C00AC2C72 /* GLcap.cpp in Sources */,
+				C4E4E6971C8F251C00AC2C72 /* depthmask.cpp in Sources */,
+				C4E4E6941C8F251C00AC2C72 /* cap.cpp in Sources */,
 				C4E4E6911C8F251C00AC2C72 /* Exception.cpp in Sources */,
-				C4E4E6951C8F251C00AC2C72 /* GLclearmask.cpp in Sources */,
-				C4E4E6981C8F251C00AC2C72 /* GLstencilmask.cpp in Sources */,
-				C4E4E6961C8F251C00AC2C72 /* GLcolormask.cpp in Sources */,
+				C4E4E6951C8F251C00AC2C72 /* clearmask.cpp in Sources */,
+				C4E4E6981C8F251C00AC2C72 /* stencilmask.cpp in Sources */,
+				C4E4E6961C8F251C00AC2C72 /* colormask.cpp in Sources */,
 				C4E4E69D1C8F251C00AC2C72 /* VertexShader.cpp in Sources */,
 				C4E4E6901C8F251C00AC2C72 /* Buffer.cpp in Sources */,
+				C4AAD5FE1C944A6E00C25865 /* Drawable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C4AAD5EE1C9449D300C25865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E4E6221C8F23E400AC2C72 /* ChaosGL */;
+			targetProxy = C4AAD5ED1C9449D300C25865 /* PBXContainerItemProxy */;
+		};
+		C4AAD5F01C9449D300C25865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChaosCore;
+			targetProxy = C4AAD5EF1C9449D300C25865 /* PBXContainerItemProxy */;
+		};
 		C4D6EFC31C8F337A00FEB8BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C4E4E6221C8F23E400AC2C72 /* ChaosGL */;
@@ -418,6 +552,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C4AAD5EB1C9449B300C25865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4AAD5EC1C9449B300C25865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C4D6EFBF1C8F32D800FEB8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -561,6 +717,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C4AAD5EA1C9449B300C25865 /* Build configuration list for PBXNativeTarget "Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AAD5EB1C9449B300C25865 /* Debug */,
+				C4AAD5EC1C9449B300C25865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C4D6EFC11C8F32D800FEB8BA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

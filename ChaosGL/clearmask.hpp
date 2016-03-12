@@ -15,14 +15,14 @@ namespace ca
 	namespace gl
 	{
 
-		struct GLclearmask
+		struct clearmask
 		{
 		protected:
-			GLclearmask (GLbitfield field);
+			clearmask (GLbitfield field);
 		public:
 			const GLbitfield field;
 			virtual void clear () = 0;
-			virtual ~GLclearmask();
+			virtual ~clearmask();
 		};
 
 	} /* namespace gl */
