@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef EXCEPTION_H_
-#define EXCEPTION_H_
+#ifndef ChaosGL_Exception_h_
+#define ChaosGL_Exception_h_
 
 #include <ChaosCore/Exception.h>
 
@@ -15,7 +15,7 @@ namespace ca
 	namespace gl
 	{
 
-		class Exception : public core::Exception
+		class Exception : public ca::core::Exception
 		{
 		public:
 			Exception(const char* message, int code, Exception* parent);
