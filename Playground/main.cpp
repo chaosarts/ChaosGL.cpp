@@ -7,11 +7,40 @@
 //
 
 #include <iostream>
-#include "../ChaosGL/Program.h"
+#include <vector>
+#include <glm/glm.hpp>
+#include <ChaosCore/core.cpp>
+#include "attrib.hpp"
 
+using namespace glm;
+using namespace ca::core;
 using namespace ca::gl;
 
-int main(int argc, const char * argv[]) {
-	Program* program = new Program();
+template<typename T>
+struct base
+{
+public:
 	
+	int size ();
+	
+	long byteSize () {
+		return sizeof(T);
+	}
+};
+
+
+template<>
+int base<vec3>::size () {return 3;};
+
+
+template<typename T>
+struct A : public base<T>
+{};
+
+int main(int argc, const char * argv[])
+{
+	tattrib_list<vec3> a = tattrib_list<vec3>();
+	
+	info("%i", a.size());
+	return 0;
 }
