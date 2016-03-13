@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Buffer_h_
-#define _ChaosGL_Buffer_h_
+#ifndef ChaosGL_Buffer_h_
+#define ChaosGL_Buffer_h_
 
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>

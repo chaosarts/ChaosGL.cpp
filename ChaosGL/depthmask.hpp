@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Gldepthbit_h_
-#define _ChaosGL_Gldepthbit_h_
+#ifndef ChaosGL_Gldepthbit_h_
+#define ChaosGL_Gldepthbit_h_
 
 #include "clearmask.hpp"
 

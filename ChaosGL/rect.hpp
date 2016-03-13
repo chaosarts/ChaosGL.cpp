@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef rect_h
-#define rect_h
+#ifndef ChaosGL_rect_hpp_
+#define ChaosGL_rect_hpp_
 
 #include <glm/glm.hpp>
 #include "size.hpp"
@@ -16,27 +16,50 @@ namespace ca
 {
 	namespace gl
 	{
-		template<typename T>
-		struct rect
+		template<typename T, glm::precision P = glm::defaultp>
+		struct t_rect
 		{
 		public:
-			typedef rect<T> type;
+			
+			/// Describes its own type
+			typedef t_rect<T, P> type;
+			
+			/// Describes the type of the elements of the generic members origin and size
 			typedef T value_type;
 			
-			glm::tvec2<T> origin;
-			gl::size<T> size;
+			/// Provides the origin of the rectangle
+			glm::tvec2<T, P> origin;
 			
-			rect (glm::tvec2<T> origin, gl::size<T> size) : origin(origin), size(size) {}
+			/// Provides the size with width and height of the rectangle
+			gl::t_size<T, P> size;
 			
-			rect (gl::size<T> size) : rect(glm::tvec2<T>(), size) {}
 			
-			rect (T x, T y, T width, T height) : rect(glm::tvec2<T>(x, y), gl::size<T>(width, height)) {}
+			/// Constructs the rect by passing origin and size objects
+			t_rect (glm::tvec2<T, P> origin, gl::t_size<T, P> size) : origin(origin), size(size) {}
 			
-			rect (T width, T height) : rect(glm::tvec2<T>(), gl::size<T>(width, height)) {}
+			
+			/// Constructs the rect by passing a size objects and implictly set origin to zero
+			t_rect (gl::t_size<T, P> size) : t_rect(glm::tvec2<T, P>(0, 0), size) {}
+			
+			
+			/// Constructs the rect with components of the origin and size
+			t_rect (T x, T y, T width, T height) : t_rect(glm::tvec2<T, P>(x, y), gl::size<T, P>(width, height)) {}
+			
+			
+			/// Constructs the rect with comoponents of size
+			t_rect (T width, T height) : t_rect(glm::tvec2<T, P>(), gl::t_size<T, P>(width, height)) {}
+			
+			
+			/// Copy constructor
+			t_rect (const t_rect& r) : t_rect(r.origin, r.size) {}
+			
+			
+			/// Destructor
+			virtual ~t_rect () {};
 		};
 		
-		typedef rect<int> recti;
-		typedef rect<float> rectf;
+		typedef t_rect<float, glm::highp> highp_rect;
+		typedef highp_rect rect;
 	}
 }
 

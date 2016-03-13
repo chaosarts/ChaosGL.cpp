@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Program_h_
-#define _ChaosGL_Program_h_
+#ifndef ChaosGL_Program_h_
+#define ChaosGL_Program_h_
 
 #ifndef ATTRIBLOC_START
 #define ATTRIBLOC_START 0;

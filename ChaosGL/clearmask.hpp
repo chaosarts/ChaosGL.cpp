@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Glbitmask_h_
-#define _ChaosGL_Glbitmask_h_
+#ifndef ChaosGL_clearmask_h_
+#define ChaosGL_clearmask_h_
 
 #include <OpenGL/gl.h>
 
@@ -14,7 +14,6 @@ namespace ca
 {
 	namespace gl
 	{
-
 		struct clearmask
 		{
 		protected:

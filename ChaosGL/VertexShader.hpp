@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_VertexShader_h_
-#define _ChaosGL_VertexShader_h_
+#ifndef ChaosGL_VertexShader_h_
+#define ChaosGL_VertexShader_h_
 
 #include "Shader.hpp"
 #include <OpenGL/gl.h>

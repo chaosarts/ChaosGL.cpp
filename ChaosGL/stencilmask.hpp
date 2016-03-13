@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Glstencilbit_h_
-#define _ChaosGL_Glstencilbit_h_
+#ifndef ChaosGL_Glstencilbit_h_
+#define ChaosGL_Glstencilbit_h_
 
 #include "clearmask.hpp"
 

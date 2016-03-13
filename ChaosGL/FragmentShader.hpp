@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Fragment_h_
-#define _ChaosGL_Fragment_h_
+#ifndef ChaosGL_Fragment_h_
+#define ChaosGL_Fragment_h_
 
 #include "Shader.hpp"
 #include <OpenGL/gl.h>

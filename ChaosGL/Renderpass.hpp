@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Renderpass_h_
-#define _ChaosGL_Renderpass_h_
+#ifndef ChaosGL_Renderpass_h_
+#define ChaosGL_Renderpass_h_
 
 #include <list>
 #include <OpenGL/gl.h>

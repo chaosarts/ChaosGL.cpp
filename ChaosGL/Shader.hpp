@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosGL_Shader_h_
-#define _ChaosGL_Shader_h_
+#ifndef ChaosGL_Shader_h_
+#define ChaosGL_Shader_h_
 
 #include <vector>
 #include <unistd.h>

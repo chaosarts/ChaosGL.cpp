@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef Drawable_hpp
-#define Drawable_hpp
+#ifndef ChaosGL_Drawable_hpp_
+#define ChaosGL_Drawable_hpp_
 
 #include <vector>
 #include <OpenGL/OpenGL.h>
