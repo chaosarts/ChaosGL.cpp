@@ -7,14 +7,10 @@
 
 #include "cap.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		cap::cap(GLenum name, bool enable) : name(name), enabled(enable) {}
 
 		cap::~cap() {}
-
-	} /* namespace gl */
 } /* namespace ca */

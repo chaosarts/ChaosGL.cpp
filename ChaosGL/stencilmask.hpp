@@ -13,10 +13,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		struct stencilmask : public clearmask
 		{
@@ -29,8 +27,6 @@ namespace ca
 
 			virtual void clear ();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* GLSTENCILBIT_H_ */

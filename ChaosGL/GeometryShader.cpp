@@ -7,10 +7,8 @@
 
 #include "GeometryShader.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		GeometryShader::GeometryShader(const char* source, int length) : Shader(GL_GEOMETRY_SHADER, source, length) {}
 
 		GeometryShader::GeometryShader(const char* filename) : Shader(GL_GEOMETRY_SHADER, filename) {}
@@ -18,6 +16,4 @@ namespace ca
 		GeometryShader::GeometryShader() : Shader(GL_GEOMETRY_SHADER) {}
 
 		GeometryShader::~GeometryShader() {}
-
-	} /* namespace gl */
 } /* namespace ca */

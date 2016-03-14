@@ -9,10 +9,8 @@
 #ifndef ChaosGL_size_hpp_
 #define ChaosGL_size_hpp_
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		template<typename T, glm::precision P = glm::defaultp>
 		struct t_size
 		{

@@ -7,202 +7,199 @@
 
 #include "Program.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
+	Program::Program() {}
+	
+	
+	Program::~Program()
 	{
-		Program::Program() {}
-
-		
-		Program::~Program()
+		glDeleteProgram(getId());
+	}
+	
+	
+	GLuint Program::getId()
+	{
+		if (_id == 0)
 		{
-			glDeleteProgram(getId());
+			_id = glCreateProgram();
+			if (_id == 0) chaos::warn("<Program> Unable to create: Is there an OpenGL context initialized?");
 		}
 		
+		return _id;
+	}
+	
+	
+	GLint Program::link()
+	{
+		if (getLinkStatus() == GL_TRUE)
+			return GL_NO_ERROR;
 		
-		GLuint Program::getId()
-		{
-			if (_id == 0)
-			{
-				_id = glCreateProgram();
-				if (_id == 0) ca::core::warn("<Program> Unable to create: Is there an OpenGL context initialized?");
-			}
-			
-			return _id;
+		_attribLocationCache.clear();
+		_uniformLocationCache.clear();
+		
+		glLinkProgram(getId());
+		
+		GLint error = glGetError();
+		chaos::info("<Program> Result of 'link': %i", error);
+		
+		return error;
+	}
+	
+	
+	GLint Program::use()
+	{
+		if (getLinkStatus() != GL_TRUE)
+			chaos::warn("Unable to use Program: Link status is false. Did you call link before?");
+		
+		glUseProgram(getId());
+		
+		GLint error = glGetError();
+		chaos::info("<Program> Result of 'use': %i", error);
+		
+		return error;
+	}
+	
+	
+	void Program::attachShader (GLuint shader)
+	{
+		glAttachShader(getId(), shader);
+	}
+	
+	
+	void Program::attachShader (chaosgl::Shader *shader)
+	{
+		try {
+			shader->compile();
+			attachShader (shader->getId());
 		}
-		
-		
-		GLint Program::link()
-		{
-			if (getLinkStatus() == GL_TRUE)
-				return GL_NO_ERROR;
-			
-			_attribLocationCache.clear();
-			_uniformLocationCache.clear();
-			
-			glLinkProgram(getId());
-			
-			GLint error = glGetError();
-			ca::core::info("<Program> Result of 'link': %i", error);
-			
-			return error;
-		}
-		
-		
-		GLint Program::use()
-		{
-			if (getLinkStatus() != GL_TRUE)
-				ca::core::warn("Unable to use Program: Link status is false. Did you call link before?");
-			
-			glUseProgram(getId());
-			
-			GLint error = glGetError();
-			ca::core::info("<Program> Result of 'use': %i", error);
-
-			return error;
-		}
-		
-		
-		void Program::attachShader (GLuint shader)
-		{
-			glAttachShader(getId(), shader);
-		}
-		
-		
-		void Program::attachShader (ca::gl::Shader *shader)
-		{
-			try {
-				shader->compile();
-				attachShader (shader->getId());
-			}
-			catch (ca::gl::Exception* e) {
-				ca::core::warn("<Program> Shader not attached to program: %s", e->message);
-			}
-		}
-		
-		
-		void Program::detachShader (GLuint shader)
-		{
-			glDetachShader(getId(), shader);
-		}
-		
-		
-		void Program::detachShader (ca::gl::Shader *shader)
-		{
-			detachShader(shader->getId());
-		}
-		
-		
-		void Program::bindAttribLocation(GLuint index, const char* name)
-		{
-			glBindAttribLocation(getId(), index, name);
-			_attribLocationCache[name] = index;
-		}
-		
-		
-		GLint Program::getAttribLocation(const char *name)
-		{
-			map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
-			if (it != _attribLocationCache.end()) return it->second;
-			
-			GLint index = glGetAttribLocation(getId(), name);
-			if (index < 0) ca::core::info("<Program> Attribute %s not found.", name);
-			else _attribLocationCache[name] = GLuint(index);
-			
-			return index;
-		}
-		
-		
-		GLint Program::getUniformLocation(const char *name)
-		{
-			map<const char*, GLuint>::iterator it = _uniformLocationCache.find(name);
-			if (it != _uniformLocationCache.end()) return it->second;
-			
-			GLint index = glGetUniformLocation(getId(), name);
-			if (index < 0) ca::core::info("<Program> Uniform %s not found", name);
-			else _uniformLocationCache[name] = GLuint(index);
-			
-			return index;
-		}
-		
-		
-		const char* Program::getInfoLog()
-		{
-			GLint length = getInfoLogLength();
-			GLchar* infoLog = new GLchar[length];
-			glGetProgramInfoLog(getId(), GLsizei(length), &length, infoLog);
-			return infoLog;
-		}
-		
-		
-		GLboolean Program::isProgram()
-		{
-			return glIsProgram(getId());
-		}
-		
-		
-		GLint Program::getParam(GLenum pname)
-		{
-			GLint param = 0;
-			glGetProgramiv(getId(), pname, &param);
-			return param;
-		}
-		
-		
-		GLint Program::getLinkStatus()
-		{
-			return getParam(GL_LINK_STATUS);
-		}
-		
-		
-		GLint Program::getDeleteStatus()
-		{
-			return getParam(GL_DELETE_STATUS);
-		}
-		
-		
-		GLint Program::getValidateStatus()
-		{
-			return getParam(GL_VALIDATE_STATUS);
-		}
-		
-		
-		GLint Program::getAttachedShaders()
-		{
-			return getParam(GL_ATTACHED_SHADERS);
-		}
-		
-		
-		GLint Program::getInfoLogLength()
-		{
-			return getParam(GL_INFO_LOG_LENGTH);
-		}
-		
-		
-		GLint Program::getActiveAttributes()
-		{
-			return getParam(GL_ACTIVE_ATTRIBUTES);
-		}
-		
-		
-		GLint Program::getActiveAttributeMaxLength()
-		{
-			return getParam(GL_ACTIVE_ATTRIBUTE_MAX_LENGTH);
-		}
-		
-		
-		GLint Program::getActiveUniforms()
-		{
-			return getParam(GL_ACTIVE_UNIFORMS);
-		}
-		
-		
-		GLint Program::getActiveUniformMaxLength()
-		{
-			return getParam(GL_ACTIVE_UNIFORM_MAX_LENGTH);
+		catch (chaosgl::Exception* e) {
+			chaos::warn("<Program> Shader not attached to program: %s", e->message);
 		}
 	}
+	
+	
+	void Program::detachShader (GLuint shader)
+	{
+		glDetachShader(getId(), shader);
+	}
+	
+	
+	void Program::detachShader (chaosgl::Shader *shader)
+	{
+		detachShader(shader->getId());
+	}
+	
+	
+	void Program::bindAttribLocation(GLuint index, const char* name)
+	{
+		glBindAttribLocation(getId(), index, name);
+		_attribLocationCache[name] = index;
+	}
+	
+	
+	GLint Program::getAttribLocation(const char *name)
+	{
+		map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
+		if (it != _attribLocationCache.end()) return it->second;
+		
+		GLint index = glGetAttribLocation(getId(), name);
+		if (index < 0) chaos::info("<Program> Attribute %s not found.", name);
+		else _attribLocationCache[name] = GLuint(index);
+		
+		return index;
+	}
+	
+	
+	GLint Program::getUniformLocation(const char *name)
+	{
+		map<const char*, GLuint>::iterator it = _uniformLocationCache.find(name);
+		if (it != _uniformLocationCache.end()) return it->second;
+		
+		GLint index = glGetUniformLocation(getId(), name);
+		if (index < 0) chaos::info("<Program> Uniform %s not found", name);
+		else _uniformLocationCache[name] = GLuint(index);
+		
+		return index;
+	}
+	
+	
+	const char* Program::getInfoLog()
+	{
+		GLint length = getInfoLogLength();
+		GLchar* infoLog = new GLchar[length];
+		glGetProgramInfoLog(getId(), GLsizei(length), &length, infoLog);
+		return infoLog;
+	}
+	
+	
+	GLboolean Program::isProgram()
+	{
+		return glIsProgram(getId());
+	}
+	
+	
+	GLint Program::getParam(GLenum pname)
+	{
+		GLint param = 0;
+		glGetProgramiv(getId(), pname, &param);
+		return param;
+	}
+	
+	
+	GLint Program::getLinkStatus()
+	{
+		return getParam(GL_LINK_STATUS);
+	}
+	
+	
+	GLint Program::getDeleteStatus()
+	{
+		return getParam(GL_DELETE_STATUS);
+	}
+	
+	
+	GLint Program::getValidateStatus()
+	{
+		return getParam(GL_VALIDATE_STATUS);
+	}
+	
+	
+	GLint Program::getAttachedShaders()
+	{
+		return getParam(GL_ATTACHED_SHADERS);
+	}
+	
+	
+	GLint Program::getInfoLogLength()
+	{
+		return getParam(GL_INFO_LOG_LENGTH);
+	}
+	
+	
+	GLint Program::getActiveAttributes()
+	{
+		return getParam(GL_ACTIVE_ATTRIBUTES);
+	}
+	
+	
+	GLint Program::getActiveAttributeMaxLength()
+	{
+		return getParam(GL_ACTIVE_ATTRIBUTE_MAX_LENGTH);
+	}
+	
+	
+	GLint Program::getActiveUniforms()
+	{
+		return getParam(GL_ACTIVE_UNIFORMS);
+	}
+	
+	
+	GLint Program::getActiveUniformMaxLength()
+	{
+		return getParam(GL_ACTIVE_UNIFORM_MAX_LENGTH);
+	}
+}
 
 
 
-} /* namespace creategl */

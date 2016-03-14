@@ -7,10 +7,8 @@
 
 #include "stencilmask.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		stencilmask::stencilmask(GLint stencil) : clearmask(GL_STENCIL_BUFFER_BIT), stencil(stencil) {}
 
@@ -22,6 +20,4 @@ namespace ca
 		{
 			glClearStencil(stencil);
 		}
-
-	} /* namespace gl */
 } /* namespace ca */

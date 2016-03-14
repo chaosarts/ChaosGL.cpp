@@ -13,65 +13,61 @@
 #include <stdlib.h>
 #include <ChaosCore/core.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
+	class Buffer
 	{
-		class Buffer
-		{
-		private:
-			
-			/** Provides the buffer id */
-			GLuint* const _id;
-
-		public:
-			
-			/** Provides the target of the buffer */
-			const GLenum target;
-			
-			
-			/**
-			 * Creates a new buffer object
-			 * @param target
-			 */
-			Buffer(GLenum target);
-
-			/**
-			 * Destructor
-			 */
-			virtual ~Buffer();
-			
-			/**
-			 * Returns the id of the buffer
-			 */
-			GLuint getId ();
-
-			
-			/**
-			 * Binds the buffer
-			 */
-			void bind ();
-			
-			
-			/**
-			 * Unbinds the buffer
-			 */
-			void unbind ();
-
-			
-			/**
-			 * Buffers data
-			 */
-			void buffer (GLsizeiptr size, const GLvoid* data, GLenum usage);
-			
-			
-			/**
-			 * Determines whether the object is a buffer or not
-			 */
-			GLboolean isBuffer ();
-		};
-	}
-
-} /* namespace creategl */
+	private:
+		
+		/** Provides the buffer id */
+		GLuint* const _id;
+		
+	public:
+		
+		/** Provides the target of the buffer */
+		const GLenum target;
+		
+		
+		/**
+		 * Creates a new buffer object
+		 * @param target
+		 */
+		Buffer(GLenum target);
+		
+		/**
+		 * Destructor
+		 */
+		virtual ~Buffer();
+		
+		/**
+		 * Returns the id of the buffer
+		 */
+		GLuint getId ();
+		
+		
+		/**
+		 * Binds the buffer
+		 */
+		void bind ();
+		
+		
+		/**
+		 * Unbinds the buffer
+		 */
+		void unbind ();
+		
+		
+		/**
+		 * Buffers data
+		 */
+		void buffer (GLsizeiptr size, const GLvoid* data, GLenum usage);
+		
+		
+		/**
+		 * Determines whether the object is a buffer or not
+		 */
+		GLboolean isBuffer ();
+	};
+}
 
 #endif /* BUFFER_H_ */

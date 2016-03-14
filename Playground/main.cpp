@@ -11,36 +11,16 @@
 #include <glm/glm.hpp>
 #include <ChaosCore/core.cpp>
 #include "attrib.hpp"
+#include "geom.hpp"
 
 using namespace glm;
-using namespace ca::core;
-using namespace ca::gl;
-
-template<typename T>
-struct base
-{
-public:
-	
-	int size ();
-	
-	long byteSize () {
-		return sizeof(T);
-	}
-};
-
-
-template<>
-int base<vec3>::size () {return 3;};
-
-
-template<typename T>
-struct A : public base<T>
-{};
+using namespace chaos;
 
 int main(int argc, const char * argv[])
 {
-	tattrib_list<vec3> a = tattrib_list<vec3>();
-	
-	info("%i", a.size());
+//	tgeom<float> a = tgeom<float>();
+//	a.addValue(vec3());
+//	a.addValue(vec3(-1.0, -1.0, 2.0));
+//	info("%i", a.count());
 	return 0;
 }

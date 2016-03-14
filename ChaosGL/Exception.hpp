@@ -10,12 +10,10 @@
 
 #include <ChaosCore/Exception.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
-		class Exception : public ca::core::Exception
+		class Exception : public chaos::Exception
 		{
 		public:
 			Exception(const char* message, int code, Exception* parent);
@@ -23,8 +21,6 @@ namespace ca
 			Exception(const char* message);
 			virtual ~Exception();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* EXCEPTION_H_ */

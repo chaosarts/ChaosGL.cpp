@@ -23,7 +23,6 @@
 		C4E4E6A81C8F2AC100AC2C72 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
 		C4F009CC1C960304001BE121 /* string_func_glm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CB1C960304001BE121 /* string_func_glm.hpp */; };
 		C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CD1C960326001BE121 /* attrib_func.hpp */; };
-		C4F009D51C960326001BE121 /* attrib_type.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CE1C960326001BE121 /* attrib_type.hpp */; };
 		C4F009D61C960326001BE121 /* attrib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CF1C960326001BE121 /* attrib.hpp */; };
 		C4F009D71C960326001BE121 /* geom.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D01C960326001BE121 /* geom.hpp */; };
 		C4F009D81C960326001BE121 /* primitive.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D11C960326001BE121 /* primitive.hpp */; };
@@ -59,6 +58,7 @@
 		C4F00A141C9603C0001BE121 /* colormask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0A1C9603C0001BE121 /* colormask.cpp */; };
 		C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0B1C9603C0001BE121 /* depthmask.cpp */; };
 		C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */; };
+		C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A1F1C963269001BE121 /* tattrib_loop.hh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +143,6 @@
 		C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C4F009CB1C960304001BE121 /* string_func_glm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string_func_glm.hpp; sourceTree = "<group>"; };
 		C4F009CD1C960326001BE121 /* attrib_func.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib_func.hpp; sourceTree = "<group>"; };
-		C4F009CE1C960326001BE121 /* attrib_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib_type.hpp; sourceTree = "<group>"; };
 		C4F009CF1C960326001BE121 /* attrib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib.hpp; sourceTree = "<group>"; };
 		C4F009D01C960326001BE121 /* geom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = geom.hpp; sourceTree = "<group>"; };
 		C4F009D11C960326001BE121 /* primitive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = primitive.hpp; sourceTree = "<group>"; };
@@ -179,6 +178,10 @@
 		C4F00A0A1C9603C0001BE121 /* colormask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colormask.cpp; sourceTree = "<group>"; };
 		C4F00A0B1C9603C0001BE121 /* depthmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = depthmask.cpp; sourceTree = "<group>"; };
 		C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stencilmask.cpp; sourceTree = "<group>"; };
+		C4F00A1C1C963185001BE121 /* tattrib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib.hpp; sourceTree = "<group>"; };
+		C4F00A1D1C9631B5001BE121 /* tattrib_countable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_countable.hpp; sourceTree = "<group>"; };
+		C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_list.hpp; sourceTree = "<group>"; };
+		C4F00A1F1C963269001BE121 /* tattrib_loop.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tattrib_loop.hh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,8 +275,7 @@
 		C4AAD6101C946C1500C25865 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C4F009CD1C960326001BE121 /* attrib_func.hpp */,
-				C4F009CE1C960326001BE121 /* attrib_type.hpp */,
+				C4F00A1B1C963163001BE121 /* attrib */,
 				C4F009CF1C960326001BE121 /* attrib.hpp */,
 				C4F009D01C960326001BE121 /* geom.hpp */,
 				C4F009D11C960326001BE121 /* primitive.hpp */,
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F009CB1C960304001BE121 /* string_func_glm.hpp */,
+				C4F009CD1C960326001BE121 /* attrib_func.hpp */,
 			);
 			name = Functions;
 			sourceTree = "<group>";
@@ -354,6 +357,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C4F00A1B1C963163001BE121 /* attrib */ = {
+			isa = PBXGroup;
+			children = (
+				C4F00A1C1C963185001BE121 /* tattrib.hpp */,
+				C4F00A1D1C9631B5001BE121 /* tattrib_countable.hpp */,
+				C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */,
+				C4F00A1F1C963269001BE121 /* tattrib_loop.hh */,
+			);
+			name = attrib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -369,6 +383,7 @@
 				C4F009DA1C960326001BE121 /* size.hpp in Headers */,
 				C4F009D91C960326001BE121 /* rect.hpp in Headers */,
 				C4F009D71C960326001BE121 /* geom.hpp in Headers */,
+				C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */,
 				C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */,
 				C4F009E61C960369001BE121 /* ChaosGL.hpp in Headers */,
 				C4F009EB1C960369001BE121 /* Program.hpp in Headers */,
@@ -382,7 +397,6 @@
 				C4F009E71C960369001BE121 /* Drawable.hpp in Headers */,
 				C4F009CC1C960304001BE121 /* string_func_glm.hpp in Headers */,
 				C4F009D81C960326001BE121 /* primitive.hpp in Headers */,
-				C4F009D51C960326001BE121 /* attrib_type.hpp in Headers */,
 				C4F00A0D1C9603C0001BE121 /* cap.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,6 @@
 #include <OpenGL/OpenGL.h>
 #include "ChaosGL.hpp"
 
-using namespace testing;
 
 void error_log (const char* message, ...)
 {
@@ -29,7 +28,7 @@ void error_log (const char* message, ...)
 
 TEST_F(ChaosGL, Shader)
 {
-	ca::gl::Shader* shader = ChaosGL::prepareFragmentShader();
+	chaosgl::Shader* shader = ChaosGL::prepareFragmentShader();
 	
 	EXPECT_NO_THROW(shader->getId());
 	EXPECT_NE(0, shader->getId());
@@ -44,7 +43,7 @@ TEST_F(ChaosGL, Shader)
 
 TEST_F(ChaosGL, Program)
 {
-	ca::gl::Program* program = ChaosGL::prepareProgram();
+	chaosgl::Program* program = ChaosGL::prepareProgram();
 	program->attachShaders(ChaosGL::prepareVertexShader());
 	program->attachShaders(ChaosGL::prepareFragmentShader());
 	
@@ -60,7 +59,7 @@ TEST_F(ChaosGL, Program)
 
 TEST_F(ChaosGL, Buffer)
 {
-	ca::gl::Buffer* buffer = new ca::gl::Buffer(GL_ARRAY_BUFFER);
+	chaosgl::Buffer* buffer = new chaosgl::Buffer(GL_ARRAY_BUFFER);
 	EXPECT_NE(0, buffer->getId());
 	EXPECT_EQ(GL_TRUE, glIsBuffer(buffer->getId()));
 	buffer->bind();

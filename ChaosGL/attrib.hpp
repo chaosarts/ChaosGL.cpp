@@ -10,15 +10,10 @@
 #ifndef ChaosGL_attrib_hpp_
 #define ChaosGL_attrib_hpp_
 
-#include <glm/glm.hpp>
-#include "attrib_type.hpp"
-
-namespace ca
-{
-	namespace gl
-	{
-		
-	}
-}
+#include "attrib_func.hpp"
+#include "tattrib.hpp"
+#include "tattrib_countable.hpp"
+#include "tattrib_list.hpp"
+#include "tattrib_loop.hh"
 
 #endif /* attrib_h */

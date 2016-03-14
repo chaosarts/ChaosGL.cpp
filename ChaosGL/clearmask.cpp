@@ -7,13 +7,9 @@
 
 #include "clearmask.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		clearmask::clearmask (GLbitfield field) : field(field) {}
 		clearmask::~clearmask() {};
-
-	} /* namespace gl */
 } /* namespace ca */
 

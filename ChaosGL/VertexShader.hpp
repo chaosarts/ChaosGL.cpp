@@ -12,10 +12,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		class VertexShader: public Shader
 		{
@@ -47,8 +45,6 @@ namespace ca
 			 */
 			virtual ~VertexShader();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* VERTEXSHADER_H_ */

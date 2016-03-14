@@ -7,20 +7,16 @@
 
 #include "depthmask.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
+	depthmask::depthmask(GLclampd depth) : clearmask(GL_DEPTH_BUFFER_BIT), depth(depth) {}
+	
+	
+	depthmask::~depthmask() {}
+	
+	
+	void depthmask::clear()
 	{
-
-		depthmask::depthmask(GLclampd depth) : clearmask(GL_DEPTH_BUFFER_BIT), depth(depth) {}
-
-
-		depthmask::~depthmask() {}
-
-
-		void depthmask::clear()
-		{
-			glClearDepth(depth);
-		}
-	} /* namespace gl */
+		glClearDepth(depth);
+	}
 } /* namespace ca */

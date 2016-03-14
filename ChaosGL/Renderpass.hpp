@@ -17,10 +17,8 @@
 
 using namespace std;
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		class Renderpass
 		{
@@ -49,8 +47,6 @@ namespace ca
 
 			void addBitmask (clearmask* bitmask);
 		};
-
-	} /* namespace gl */
-} /* namespace ca */
+}
 
 #endif /* RENDERER_H_ */

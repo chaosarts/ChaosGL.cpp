@@ -12,10 +12,8 @@
 #include <glm/glm.hpp>
 #include "size.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		template<typename T, glm::precision P = glm::defaultp>
 		struct t_rect
 		{

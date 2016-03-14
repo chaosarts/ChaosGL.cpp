@@ -7,10 +7,8 @@
 
 #include "Renderpass.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		Renderpass::~Renderpass() {}
 
 
@@ -54,6 +52,4 @@ namespace ca
 		{
 			_bitmasks.push_back(bitmask);
 		}
-
-	} /* namespace gl */
 } /* namespace ca */

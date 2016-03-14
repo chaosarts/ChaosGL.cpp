@@ -7,10 +7,8 @@
 
 #include "colormask.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		colormask::colormask(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha) :
 				clearmask(GL_COLOR_BUFFER_BIT), red(red), green(green), blue(blue), alpha(alpha) {}
@@ -31,6 +29,4 @@ namespace ca
 		{
 			glClearColor(red, green, blue, alpha);
 		}
-
-	} /* namespace gl */
 } /* namespace ca */

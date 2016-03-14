@@ -7,21 +7,17 @@
 
 #include "Exception.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		Exception::Exception(const char* message, int code, Exception* parent) :
-				ca::core::Exception(message, code, parent) {}
+				chaos::Exception(message, code, parent) {}
 
 		Exception::Exception(const char* message, int code) :
-				ca::core::Exception(message, code) {}
+				chaos::Exception(message, code) {}
 
 		Exception::Exception(const char* message) :
-				ca::core::Exception(message) {}
+				chaos::Exception(message) {}
 
 		Exception::~Exception() {}
-
-	} /* namespace gl */
 } /* namespace ca */

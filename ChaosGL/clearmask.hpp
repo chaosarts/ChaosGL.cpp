@@ -10,10 +10,8 @@
 
 #include <OpenGL/gl.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		struct clearmask
 		{
 		protected:
@@ -23,8 +21,6 @@ namespace ca
 			virtual void clear () = 0;
 			virtual ~clearmask();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* GLBITMASK_H_ */

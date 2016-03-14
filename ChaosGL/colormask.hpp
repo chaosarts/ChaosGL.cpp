@@ -13,10 +13,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		struct colormask : public clearmask
 		{
@@ -32,8 +30,6 @@ namespace ca
 			virtual ~colormask();
 			virtual void clear();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* GLCOLORBIT_H_ */

@@ -38,7 +38,7 @@ void ChaosGL::TearDown() {
 	while (!glfwWindowShouldClose(_window)) {
 		glfwSwapBuffers(_window);
 		glfwPollEvents();
-		ca::core::info("Poll");
+		chaos::info("Poll");
 	}
 	
 	glfwDestroyWindow(_window);
@@ -46,24 +46,24 @@ void ChaosGL::TearDown() {
 
 
 
-ca::gl::VertexShader* ChaosGL::prepareVertexShader()
+chaosgl::VertexShader* ChaosGL::prepareVertexShader()
 {
-	ca::gl::VertexShader* shader = new ca::gl::VertexShader();
+	chaosgl::VertexShader* shader = new chaosgl::VertexShader();
 	shader->addSource("/Users/chaos/Development/Sources/c++/chaosarts/ChaosGL/ChaosGLTest/main.vs.glsl");
 	return shader;
 }
 
 
-ca::gl::FragmentShader* ChaosGL::prepareFragmentShader()
+chaosgl::FragmentShader* ChaosGL::prepareFragmentShader()
 {
-	ca::gl::FragmentShader* shader = new ca::gl::FragmentShader();
+	chaosgl::FragmentShader* shader = new chaosgl::FragmentShader();
 	shader->addSource("/Users/chaos/Development/Sources/c++/chaosarts/ChaosGL/ChaosGLTest/main.fs.glsl");
 	return shader;
 }
 
 
-ca::gl::Program* ChaosGL::prepareProgram()
+chaosgl::Program* ChaosGL::prepareProgram()
 {
-	ca::gl::Program* program = new ca::gl::Program();
+	chaosgl::Program* program = new chaosgl::Program();
 	return program;
 }

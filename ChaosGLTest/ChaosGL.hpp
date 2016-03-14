@@ -30,10 +30,10 @@ public:
 	
 	virtual ~ChaosGL ();
 	
-	static ca::gl::VertexShader* prepareVertexShader ();
+	static chaosgl::VertexShader* prepareVertexShader ();
 	
-	static ca::gl::FragmentShader* prepareFragmentShader ();
+	static chaosgl::FragmentShader* prepareFragmentShader ();
 	
-	static ca::gl::Program* prepareProgram ();
+	static chaosgl::Program* prepareProgram ();
 };
 #endif /* Base_hpp */

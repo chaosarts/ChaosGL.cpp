@@ -11,44 +11,41 @@
 
 #include <glm/glm.hpp>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
+	template<typename T>
+	int element_count (T value)
 	{
-		template<typename T>
-		int element_count (T value)
-		{
-			return 1;
-		}
-		
-		
-		template<typename T, glm::precision P = glm::defaultp>
-		int element_count (glm::tvec1<T, P> vec = glm::tvec1<T, P> ())
-		{
-			return 1;
-		}
-		
-		
-		template<typename T, glm::precision P = glm::defaultp>
-		int element_count (glm::tvec2<T, P> vec = glm::tvec2<T, P> ())
-		{
-			return 2;
-		}
-		
-		
-		template<typename T, glm::precision P = glm::defaultp>
-		int element_count (glm::tvec3<T, P> vec = glm::tvec3<T, P> ())
-		{
-			return 3;
-		}
-		
-		
-		template<typename T, glm::precision P = glm::defaultp>
-		int element_count (glm::tvec4<T, P> vec = glm::tvec4<T, P> ())
-		{
-			return 4;
-		}
+		return 1;
+	}
+	
+	
+	template<typename T, glm::precision P = glm::defaultp>
+	int element_count (glm::tvec1<T, P> vec = glm::tvec1<T, P> ())
+	{
+		return 1;
+	}
+	
+	
+	template<typename T, glm::precision P = glm::defaultp>
+	int element_count (glm::tvec2<T, P> vec = glm::tvec2<T, P> ())
+	{
+		return 2;
+	}
+	
+	
+	template<typename T, glm::precision P = glm::defaultp>
+	int element_count (glm::tvec3<T, P> vec = glm::tvec3<T, P> ())
+	{
+		return 3;
+	}
+	
+	
+	template<typename T, glm::precision P = glm::defaultp>
+	int element_count (glm::tvec4<T, P> vec = glm::tvec4<T, P> ())
+	{
+		return 4;
 	}
 }
 
-#endif /* attrib_func_h */
+#endif

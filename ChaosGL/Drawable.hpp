@@ -15,17 +15,15 @@
 
 using namespace std;
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
+	
+	class Drawable
 	{
+	public:
 		
-		class Drawable
-		{
-		public:
-			
-			void draw ();
-		};
-	}
+		void draw ();
+	};
+	
 }
-#endif /* Bufferable_hpp */
+#endif

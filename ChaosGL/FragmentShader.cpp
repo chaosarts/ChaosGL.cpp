@@ -7,10 +7,8 @@
 
 #include "FragmentShader.hpp"
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 		FragmentShader::FragmentShader(const char* source, int length) : Shader(GL_FRAGMENT_SHADER, source, length) {}
 
 		FragmentShader::FragmentShader(const char* filename) : Shader(GL_FRAGMENT_SHADER, filename) {}
@@ -18,6 +16,4 @@ namespace ca
 		FragmentShader::FragmentShader() : Shader(GL_FRAGMENT_SHADER) {}
 
 		FragmentShader::~FragmentShader() {}
-
-	} /* namespace gl */
 } /* namespace ca */

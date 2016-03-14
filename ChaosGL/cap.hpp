@@ -11,10 +11,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/gl3.h>
 
-namespace ca
+namespace chaosgl
 {
-	namespace gl
-	{
 
 		class cap
 		{
@@ -31,8 +29,6 @@ namespace ca
 			/** Destructor */
 			virtual ~cap();
 		};
-
-	} /* namespace gl */
 } /* namespace ca */
 
 #endif /* GLCAP_H_ */
