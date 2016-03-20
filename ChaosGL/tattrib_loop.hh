@@ -37,6 +37,7 @@ namespace chaosgl
 		virtual ~tattrib_loop () {}
 		
 		
+		///
 		void add (T value)
 		{
 			_values.push_back(value);

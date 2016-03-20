@@ -24,6 +24,11 @@ namespace chaosgl
 	struct tattrib_countable : public virtual tattrib<T>
 	{
 	public:
+		
+		typedef tattrib_countable<T> Type;
+		
+		typedef T VertexType;
+		
 		/// Returns the count of value to buffer, depending on passed target
 		virtual int count (GLenum target = GL_ARRAY_BUFFER) const = 0;
 		

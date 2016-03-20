@@ -38,10 +38,10 @@ namespace chaosgl
 	public:
 		
 		/// Describes its own type
-		typedef tattrib_list<T> type;
+		typedef tattrib_list<T> Type;
 		
 		/// Describes the type of the values
-		typedef T value_type;
+		typedef T VertexType;
 		
 		
 		/// Destroy the attrib list object
@@ -64,7 +64,7 @@ namespace chaosgl
 		
 		
 		/// Returns the index of the value in this attrib list
-		int indexOf (T value) const
+		int indexOf (VertexType value) const
 		{
 			int index = 0;
 			while (index < (int) _values.size())
@@ -78,7 +78,7 @@ namespace chaosgl
 		
 		
 		/// Sames as operator[index]
-		virtual T getValue (int index, GLenum target = GL_ARRAY_BUFFER) const
+		virtual VertexType getValue (int index, GLenum target = GL_ARRAY_BUFFER) const
 		{
 			int i = target == GL_ARRAY_BUFFER ? _indexlist[index] : index;
 			return *(_values.begin() + i);
@@ -87,7 +87,7 @@ namespace chaosgl
 		
 		/// Adds a new value to the attribute. If the same value has been added before,
 		/// indexlist only will be updated
-		virtual void addValue (T value)
+		virtual void addValue (VertexType value)
 		{
 			/// Generate key from value and check if the value has been added before
 			int index = indexOf(value);
@@ -97,7 +97,6 @@ namespace chaosgl
 				index = (int) _values.size();
 				_values.push_back(value);
 			}
-			
 			_indexlist.push_back(index);
 		}
 		
