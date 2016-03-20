@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -59,6 +59,7 @@
 		C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0B1C9603C0001BE121 /* depthmask.cpp */; };
 		C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */; };
 		C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A1F1C963269001BE121 /* tattrib_loop.hh */; };
+		C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A251C964DD5001BE121 /* tgeom.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,10 @@
 		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
 		C4AAD5E61C9449B300C25865 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AAD5E81C9449B300C25865 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4B634D91C9ECF3C00D406C0 /* ttexcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttexcoord.hpp; sourceTree = "<group>"; };
+		C4B634DA1C9ED01B00D406C0 /* texcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texcoord.hpp; sourceTree = "<group>"; };
+		C4B634DC1C9ED20100D406C0 /* ttriangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttriangle.hpp; sourceTree = "<group>"; };
+		C4B634DD1C9ED33E00D406C0 /* tquad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tquad.hpp; sourceTree = "<group>"; };
 		C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D6EFBD1C8F32D800FEB8BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
@@ -182,6 +187,8 @@
 		C4F00A1D1C9631B5001BE121 /* tattrib_countable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_countable.hpp; sourceTree = "<group>"; };
 		C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_list.hpp; sourceTree = "<group>"; };
 		C4F00A1F1C963269001BE121 /* tattrib_loop.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tattrib_loop.hh; sourceTree = "<group>"; };
+		C4F00A251C964DD5001BE121 /* tgeom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tgeom.hpp; sourceTree = "<group>"; };
+		C4F00A271C964E6B001BE121 /* tgeom_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tgeom_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +227,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C445482B1C99C8060069E9F8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				C4F00A1B1C963163001BE121 /* attrib */,
+				C4F00A241C964D93001BE121 /* geom */,
+				C4B634DB1C9ED1DD00D406C0 /* primitive */,
+				C4B634D81C9ECF0600D406C0 /* texcoord */,
+				C4F009CF1C960326001BE121 /* attrib.hpp */,
+				C4F009D01C960326001BE121 /* geom.hpp */,
+				C4F009D11C960326001BE121 /* primitive.hpp */,
+				C4F009D21C960326001BE121 /* rect.hpp */,
+				C4F009D31C960326001BE121 /* size.hpp */,
+				C4B634DA1C9ED01B00D406C0 /* texcoord.hpp */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
 		C4AAD5CC1C92FCCC00C25865 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,12 +299,6 @@
 		C4AAD6101C946C1500C25865 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C4F00A1B1C963163001BE121 /* attrib */,
-				C4F009CF1C960326001BE121 /* attrib.hpp */,
-				C4F009D01C960326001BE121 /* geom.hpp */,
-				C4F009D11C960326001BE121 /* primitive.hpp */,
-				C4F009D21C960326001BE121 /* rect.hpp */,
-				C4F009D31C960326001BE121 /* size.hpp */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -294,9 +312,27 @@
 			name = Functions;
 			sourceTree = "<group>";
 		};
+		C4B634D81C9ECF0600D406C0 /* texcoord */ = {
+			isa = PBXGroup;
+			children = (
+				C4B634D91C9ECF3C00D406C0 /* ttexcoord.hpp */,
+			);
+			name = texcoord;
+			sourceTree = "<group>";
+		};
+		C4B634DB1C9ED1DD00D406C0 /* primitive */ = {
+			isa = PBXGroup;
+			children = (
+				C4B634DC1C9ED20100D406C0 /* ttriangle.hpp */,
+				C4B634DD1C9ED33E00D406C0 /* tquad.hpp */,
+			);
+			name = primitive;
+			sourceTree = "<group>";
+		};
 		C4C1A8D11C9020AC00753C31 /* ChaosGL */ = {
 			isa = PBXGroup;
 			children = (
+				C445482B1C99C8060069E9F8 /* Templates */,
 				C4AAD6161C946FC300C25865 /* Functions */,
 				C4AAD6101C946C1500C25865 /* Interfaces */,
 				C4AAD5FF1C944A7E00C25865 /* Classes */,
@@ -368,6 +404,15 @@
 			name = attrib;
 			sourceTree = "<group>";
 		};
+		C4F00A241C964D93001BE121 /* geom */ = {
+			isa = PBXGroup;
+			children = (
+				C4F00A251C964DD5001BE121 /* tgeom.hpp */,
+				C4F00A271C964E6B001BE121 /* tgeom_list.hpp */,
+			);
+			name = geom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -384,6 +429,7 @@
 				C4F009D91C960326001BE121 /* rect.hpp in Headers */,
 				C4F009D71C960326001BE121 /* geom.hpp in Headers */,
 				C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */,
+				C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */,
 				C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */,
 				C4F009E61C960369001BE121 /* ChaosGL.hpp in Headers */,
 				C4F009EB1C960369001BE121 /* Program.hpp in Headers */,
@@ -481,7 +527,7 @@
 				};
 			};
 			buildConfigurationList = C4E4E61E1C8F23E400AC2C72 /* Build configuration list for PBXProject "ChaosGL" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
