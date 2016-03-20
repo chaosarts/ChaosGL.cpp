@@ -13,14 +13,44 @@
 #include "attrib.hpp"
 #include "geom.hpp"
 
-using namespace glm;
-using namespace chaos;
+template<typename T>
+struct a
+{
+public:
+	virtual void getValue () const = 0;
+	
+	virtual void count () const = 0;
+};
+
+
+template<typename T>
+struct b : public virtual a<T>
+{
+public:
+	virtual void getValue () const {};
+};
+
+
+template<typename T>
+struct c : public virtual a<T>
+{
+public:
+	virtual void count () const {}
+};
+
+template<typename T>
+struct d : public virtual b<T>, public virtual c<T>
+{
+public:
+};
 
 int main(int argc, const char * argv[])
 {
-//	tgeom<float> a = tgeom<float>();
-//	a.addValue(vec3());
-//	a.addValue(vec3(-1.0, -1.0, 2.0));
-//	info("%i", a.count());
+	d<float> C = d<float>();
+	C.getValue();
+//	chaosgl::geom a = chaosgl::geom();
+////	a.addValue(glm::vec3());
+////	a.addValue(glm::vec3(-1.0, -1.0, 2.0));
+//	chaos::info("%i", a.count());
 	return 0;
 }
