@@ -10,9 +10,20 @@
 #define ChaosGL_attrib_func_hpp_
 
 #include <glm/glm.hpp>
+#include "tattrib.hpp"
 
 namespace chaosgl
 {
+	
+	template<typename T>
+	void* contribute (void* data, tattrib<T>* attribute, int index, GLenum target = GL_ARRAY_BUFFER)
+	{
+		T* ptr = (T*) data;
+		*ptr = attribute->getValue(index, target);
+		ptr = ptr + 1;
+		return (void*) ptr;
+	}
+	
 	template<typename T>
 	int element_count (T value)
 	{
@@ -46,6 +57,9 @@ namespace chaosgl
 	{
 		return 4;
 	}
+	
+	
+	
 }
 
 #endif
