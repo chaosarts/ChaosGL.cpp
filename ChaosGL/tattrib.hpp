@@ -20,31 +20,45 @@ namespace chaosgl
 	{
 	public:
 		
-		typedef tattrib<T> type;
+		typedef tattrib<T> Type;
 		
 		/// Provides the data type
-		typedef T value_type;
+		typedef T VertexType;
+	
+	public:
+		
+		/**
+		 * Indicates how to store data
+		 */
+		GLenum usage = GL_STATIC_DRAW;
 		
 		
-		/// Destroys the attribute
+		/** 
+		 * Destroys the attribute
+		 */
 		virtual ~tattrib () {};
 		
 		
-		/// Returns the value at givn index for the sepcified target buffer
-		virtual T getValue (int index, GLenum target = GL_ARRAY_BUFFER) const = 0;
+		/** 
+		 * Returns the value at givn index for the sepcified target buffer
+		 * @return The value at given index
+		 */
+		virtual VertexType getValue (int index, GLenum target = GL_ARRAY_BUFFER) const = 0;
 		
 		
-		/// Returns the size of the attribute per vertex (1, 2, 3 or 4)
+		/**
+		 * Returns the size of the attribute per vertex (1, 2, 3 or 4)
+		 */
 		int size () const
 		{
-			return element_count(T());
+			return element_count(VertexType());
 		}
 		
 		
 		/// Provides the size of the attribute per vertex
 		long byteSizePerVertex () const
 		{
-			return sizeof(T);
+			return sizeof(VertexType);
 		}
 	};
 }
