@@ -6,14 +6,12 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_Drawable_hpp_
-#define ChaosGL_Drawable_hpp_
+#ifndef ChaosGL_Drawable_hpp
+#define ChaosGL_Drawable_hpp
 
 #include <vector>
 #include <OpenGL/OpenGL.h>
 #include "Buffer.hpp"
-
-using namespace std;
 
 namespace chaosgl
 {
@@ -21,6 +19,8 @@ namespace chaosgl
 	class Drawable
 	{
 	public:
+		
+		std::vector<Buffer> getBuffers ();
 		
 		void draw ();
 	};

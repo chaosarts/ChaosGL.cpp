@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_tgeom_list_h
-#define ChaosGL_tgeom_list_h
+#ifndef ChaosGL_tgeom_list_hpp
+#define ChaosGL_tgeom_list_hpp
 
 #include <vector>
 
@@ -35,32 +35,48 @@ namespace chaosgl
 		typedef tgeom_list<T, P> type;
 		
 		/** Describes the type of the vertex data */
-		typedef glm::tvec3<T, P> vector_type;
+		typedef glm::tvec3<T, P> VertexType;
 		
 		/** Describes the inner value type of a vertex data */
-		typedef T value_type;
+		typedef T ValueType;
 		
 		/** Describes the parent data type */
-		typedef tgeom<T, P> tgeom;
+		typedef tgeom<T, P> GeometryType;
 		
 		/** Describes the other parent data type */
-		typedef tattrib_list<vector_type> tattrib_list;
+		typedef tattrib_list<VertexType> AttribListType;
 		
-	private:
 		
-		/// Provides the min values of x, y and z in this geometry
-		vector_type _min;
+		/**
+		 * Creates a new geom list attribute object
+		 */
+		tgeom_list () {}
 		
-		/// Provides the max values of x, y and z in this geometry
-		vector_type _max;
 		
-	public:
+		/**
+		 * Constructor to copy a geometry
+		 */
+		tgeom_list (const GeometryType &geom)
+		{
+			int index = 0;
+			while (index < geom->count(GL_ARRAY_BUFFER))
+				addValue(geom->getValue(index, GL_ARRAY_BUFFER));
+			
+			this->usage = geom->usage;
+		}
+		
+		
+		/**
+		 * Destroys the geom list attribute object
+		 */
+		virtual ~tgeom_list () {};
+		
 		
 		/**
 		 * Returns the min values for x, y and z as an vector
 		 * @return The min values
 		 */
-		virtual vector_type getMinValues () const
+		virtual VertexType getMinValues () const
 		{
 			return _min;
 		}
@@ -70,7 +86,7 @@ namespace chaosgl
 		 * Returns the max values for x, y and z as an vector
 		 * @return The max values
 		 */
-		virtual vector_type getMaxValues () const
+		virtual VertexType getMaxValues () const
 		{
 			return _max;
 		}
@@ -83,7 +99,7 @@ namespace chaosgl
 		 */
 		virtual std::vector<int> getIndexList () const
 		{
-			return tattrib_list::getIndexList();
+			return AttribListType::getIndexList();
 		}
 		
 		
@@ -94,16 +110,25 @@ namespace chaosgl
 		 */
 		virtual int count (GLenum target = GL_ARRAY_BUFFER) const
 		{
-			return tattrib_list::count();
+			return AttribListType::count(target);
+		}
+		
+		
+		/**
+		 * @see chaosgl::attrib_countable
+		 */
+		virtual int indexOf (VertexType value) const
+		{
+			return AttribListType::indexOf(value);
 		}
 		
 		
 		/**
 		 * Adds a new value to the list
 		 */
-		virtual void addValue (vector_type value)
+		virtual void addValue (VertexType value)
 		{			
-			if (tattrib_list::count() == 0)
+			if (AttribListType::count() == 0)
 			{
 				_min.x = value.x;
 				_max.x = value.x;
@@ -122,8 +147,16 @@ namespace chaosgl
 				_max.z = std::max(value.z, _max.z);
 			}
 			
-			tattrib_list::addValue(value);
+			AttribListType::addValue(value);
 		}
+		
+	private:
+		
+		/// Provides the min values of x, y and z in this geometry
+		VertexType _min;
+		
+		/// Provides the max values of x, y and z in this geometry
+		VertexType _max;
 	};
 }
 

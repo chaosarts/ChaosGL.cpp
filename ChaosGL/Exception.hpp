@@ -5,10 +5,10 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Exception_h_
-#define ChaosGL_Exception_h_
+#ifndef ChaosGL_Exception_hpp
+#define ChaosGL_Exception_hpp
 
-#include <ChaosCore/Exception.h>
+#include <ChaosCore/Exception.hpp>
 
 namespace chaosgl
 {

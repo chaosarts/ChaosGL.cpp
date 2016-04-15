@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_rect_hpp_
-#define ChaosGL_rect_hpp_
+#ifndef ChaosGL_rect_hpp
+#define ChaosGL_rect_hpp
 
 #include <glm/glm.hpp>
 #include "size.hpp"

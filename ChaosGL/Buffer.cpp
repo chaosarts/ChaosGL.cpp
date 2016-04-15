@@ -6,6 +6,7 @@
  */
 
 #include "Buffer.hpp"
+#include <ChaosCore/ChaosCore.hpp>
 
 namespace chaosgl
 {

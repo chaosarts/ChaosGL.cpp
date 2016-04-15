@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_attrib_func_hpp_
-#define ChaosGL_attrib_func_hpp_
+#ifndef ChaosGL_attrib_func_hpp
+#define ChaosGL_attrib_func_hpp
 
 #include <glm/glm.hpp>
 #include "tattrib.hpp"

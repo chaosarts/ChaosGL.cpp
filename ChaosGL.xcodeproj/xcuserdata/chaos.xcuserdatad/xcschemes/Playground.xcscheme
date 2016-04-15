@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4AAD5E51C9449B300C25865"
+               BlueprintIdentifier = "C4B634FC1CA0B2C800D406C0"
                BuildableName = "Playground"
                BlueprintName = "Playground"
                ReferencedContainer = "container:ChaosGL.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4AAD5E51C9449B300C25865"
+            BlueprintIdentifier = "C4B634FC1CA0B2C800D406C0"
             BuildableName = "Playground"
             BlueprintName = "Playground"
             ReferencedContainer = "container:ChaosGL.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4AAD5E51C9449B300C25865"
+            BlueprintIdentifier = "C4B634FC1CA0B2C800D406C0"
             BuildableName = "Playground"
             BlueprintName = "Playground"
             ReferencedContainer = "container:ChaosGL.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4AAD5E51C9449B300C25865"
+            BlueprintIdentifier = "C4B634FC1CA0B2C800D406C0"
             BuildableName = "Playground"
             BlueprintName = "Playground"
             ReferencedContainer = "container:ChaosGL.xcodeproj">

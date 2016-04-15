@@ -1,5 +1,5 @@
 //
-//  ttriangle.hpp
+//  triangle.hpp
 //  ChaosGL
 //
 //  Created by Fu Lam Diep on 14.04.16.

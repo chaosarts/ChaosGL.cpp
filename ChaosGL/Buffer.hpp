@@ -5,13 +5,11 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Buffer_h_
-#define ChaosGL_Buffer_h_
+#ifndef ChaosGL_Buffer_hpp
+#define ChaosGL_Buffer_hpp
 
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 #include <stdlib.h>
-#include <ChaosCore/core.h>
 
 namespace chaosgl
 {

@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_size_hpp_
-#define ChaosGL_size_hpp_
+#ifndef ChaosGL_size_hpp
+#define ChaosGL_size_hpp
 
 namespace chaosgl
 {

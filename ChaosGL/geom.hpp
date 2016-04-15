@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_geom_hpp_
-#define ChaosGL_geom_hpp_
+#ifndef ChaosGL_geom_hpp
+#define ChaosGL_geom_hpp
 
 #include "tgeom.hpp"
 #include "tgeom_list.hpp"

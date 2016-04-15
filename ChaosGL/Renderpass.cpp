@@ -6,6 +6,9 @@
  */
 
 #include "Renderpass.hpp"
+#include "cap.hpp"
+#include "clearmask.hpp"
+#include "Program.hpp"
 
 namespace chaosgl
 {
@@ -15,7 +18,7 @@ namespace chaosgl
 		void Renderpass::render ()
 		{
 			{
-				list<clearmask*>::iterator it = _bitmasks.begin();
+				std::list<clearmask*>::iterator it = _bitmasks.begin();
 				GLbitfield mask = 0;
 
 				while (it != _bitmasks.end())
@@ -28,7 +31,7 @@ namespace chaosgl
 			}
 
 			{
-				list<cap*>::iterator it = _caps.begin();
+				std::list<cap*>::iterator it = _caps.begin();
 				while (it != _caps.end())
 				{
 					if ((*it)->enabled) glEnable((*it)->name);

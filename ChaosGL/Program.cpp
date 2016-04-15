@@ -6,6 +6,9 @@
  */
 
 #include "Program.hpp"
+#include "Exception.hpp"
+#include "Shader.hpp"
+#include <ChaosCore/ChaosCore.hpp>
 
 namespace chaosgl
 {
@@ -100,7 +103,7 @@ namespace chaosgl
 	
 	GLint Program::getAttribLocation(const char *name)
 	{
-		map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
+		std::map<const char*, GLuint>::iterator it = _attribLocationCache.find(name);
 		if (it != _attribLocationCache.end()) return it->second;
 		
 		GLint index = glGetAttribLocation(getId(), name);
@@ -113,7 +116,7 @@ namespace chaosgl
 	
 	GLint Program::getUniformLocation(const char *name)
 	{
-		map<const char*, GLuint>::iterator it = _uniformLocationCache.find(name);
+		std::map<const char*, GLuint>::iterator it = _uniformLocationCache.find(name);
 		if (it != _uniformLocationCache.end()) return it->second;
 		
 		GLint index = glGetUniformLocation(getId(), name);

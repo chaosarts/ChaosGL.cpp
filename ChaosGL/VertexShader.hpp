@@ -5,12 +5,11 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_VertexShader_h_
-#define ChaosGL_VertexShader_h_
+#ifndef ChaosGL_VertexShader_hpp
+#define ChaosGL_VertexShader_hpp
 
 #include "Shader.hpp"
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {

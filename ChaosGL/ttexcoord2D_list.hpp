@@ -16,7 +16,7 @@
 namespace chaosgl
 {
 	template<typename T, glm::precision P = glm::defaultp>
-	struct ttexture2D_list : public virtual ttexture2D<T, P>, public virtual tattrib_list<glm::vec3<T, P>>
+	struct ttexcoord2D_list : public virtual ttexture2D<T, P>, public virtual tattrib_list<glm::vec3<T, P>>
 	{
 		
 	}

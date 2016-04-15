@@ -5,11 +5,10 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Geometry_h_
-#define ChaosGL_Geometry_h_
+#ifndef ChaosGL_Geometry_hpp
+#define ChaosGL_Geometry_hpp
 
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 #include "Shader.hpp"
 
 namespace chaosgl

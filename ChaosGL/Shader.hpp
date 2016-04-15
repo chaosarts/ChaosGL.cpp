@@ -5,18 +5,11 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Shader_h_
-#define ChaosGL_Shader_h_
+#ifndef ChaosGL_Shader_hpp
+#define ChaosGL_Shader_hpp
 
 #include <vector>
-#include <unistd.h>
-#include <sys/stat.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
-#include <ChaosCore/core.h>
-#include "Exception.hpp"
-
-using namespace std;
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {
@@ -34,7 +27,7 @@ namespace chaosgl
 		GLuint _id = 0;
 		
 		/** Provides a list of GLSL source strings */
-		vector<const char*> _sources;
+		std::vector<const char*> _sources;
 		
 		
 	public:

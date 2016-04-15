@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Program_h_
-#define ChaosGL_Program_h_
+#ifndef ChaosGL_Program_hpp
+#define ChaosGL_Program_hpp
 
 #ifndef ATTRIBLOC_START
 #define ATTRIBLOC_START 0;
@@ -54,14 +54,11 @@
 
 #include <vector>
 #include <map>
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
-#include <ChaosCore/core.h>
-#include "Exception.hpp"
-#include "Shader.hpp"
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {
+	class Shader;
 	class Program
 	{
 	private:
@@ -70,10 +67,10 @@ namespace chaosgl
 		GLuint _id = 0;
 		
 		/** Caches attribute locations */
-		map<const char*, GLuint> _attribLocationCache;
+		std::map<const char*, GLuint> _attribLocationCache;
 		
 		/** Caches uniform locations */
-		map<const char*, GLuint> _uniformLocationCache;
+		std::map<const char*, GLuint> _uniformLocationCache;
 	public:
 		
 		/**

@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4AAD5541C919B0F00C25865 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */; };
-		C4AAD5551C919B0F00C25865 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5531C919B0F00C25865 /* libgtest.a */; };
-		C4AAD5E91C9449B300C25865 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4AAD5E81C9449B300C25865 /* main.cpp */; };
-		C4AAD5F11C9449F600C25865 /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
-		C4AAD5F41C9449FD00C25865 /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
-		C4AAD5F51C944A0500C25865 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
-		C4AAD5F61C944A1500C25865 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */; };
-		C4D6EFBE1C8F32D800FEB8BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFBD1C8F32D800FEB8BA /* main.cpp */; };
-		C4D6EFC61C8F338500FEB8BA /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
-		C4D6EFC71C8F338500FEB8BA /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
-		C4D6EFC81C8F338D00FEB8BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
-		C4D6EFCD1C8F368800FEB8BA /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */; };
+		C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634E11C9F410200D406C0 /* Framebuffer.cpp */; };
+		C4B634E41C9F410200D406C0 /* Framebuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4B634E21C9F410200D406C0 /* Framebuffer.hpp */; };
+		C4B634E71C9F61F200D406C0 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634E51C9F61F200D406C0 /* Texture.cpp */; };
+		C4B634E81C9F61F200D406C0 /* Texture.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4B634E61C9F61F200D406C0 /* Texture.hpp */; };
+		C4B634EC1C9F6B3200D406C0 /* Texture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634EA1C9F6B3200D406C0 /* Texture2D.cpp */; };
+		C4B634ED1C9F6B3200D406C0 /* Texture2D.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4B634EB1C9F6B3200D406C0 /* Texture2D.hpp */; };
+		C4B634EF1C9F90B100D406C0 /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634EE1C9F90B100D406C0 /* ChaosGL.cpp */; };
+		C4B635051CA0B32800D406C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B635041CA0B32800D406C0 /* main.cpp */; };
+		C4B635091CA0B6FF00D406C0 /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
+		C4B6350A1CA0B6FF00D406C0 /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
+		C4B635191CA0C7EE00D406C0 /* ChaosGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4B634E91C9F62D200D406C0 /* ChaosGL.hpp */; };
+		C4B76E791CC105D700A8A9DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B76E781CC105D700A8A9DA /* main.cpp */; };
+		C4B76E861CC10D6200A8A9DA /* libChaosGL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */; };
+		C4B76E871CC10D6200A8A9DA /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
+		C4B76E881CC10D8700A8A9DA /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AAD5531C919B0F00C25865 /* libgtest.a */; };
 		C4E4E6A61C8F28F200AC2C72 /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */; };
 		C4E4E6A81C8F2AC100AC2C72 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */; };
+		C4EAA3EE1CA0D4C4005D815B /* Manifest.xml in Sources */ = {isa = PBXBuildFile; fileRef = C4B635181CA0C3FC00D406C0 /* Manifest.xml */; };
 		C4F009CC1C960304001BE121 /* string_func_glm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CB1C960304001BE121 /* string_func_glm.hpp */; };
 		C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CD1C960326001BE121 /* attrib_func.hpp */; };
 		C4F009D61C960326001BE121 /* attrib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009CF1C960326001BE121 /* attrib.hpp */; };
@@ -29,7 +33,6 @@
 		C4F009D91C960326001BE121 /* rect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D21C960326001BE121 /* rect.hpp */; };
 		C4F009DA1C960326001BE121 /* size.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D31C960326001BE121 /* size.hpp */; };
 		C4F009E51C960369001BE121 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DB1C960369001BE121 /* Buffer.hpp */; };
-		C4F009E61C960369001BE121 /* ChaosGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DC1C960369001BE121 /* ChaosGL.hpp */; };
 		C4F009E71C960369001BE121 /* Drawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DD1C960369001BE121 /* Drawable.hpp */; };
 		C4F009E81C960369001BE121 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DE1C960369001BE121 /* Exception.hpp */; };
 		C4F009E91C960369001BE121 /* FragmentShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DF1C960369001BE121 /* FragmentShader.hpp */; };
@@ -39,7 +42,6 @@
 		C4F009ED1C960369001BE121 /* Shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009E31C960369001BE121 /* Shader.hpp */; };
 		C4F009EE1C960369001BE121 /* VertexShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009E41C960369001BE121 /* VertexShader.hpp */; };
 		C4F009F91C960382001BE121 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009EF1C960382001BE121 /* Buffer.cpp */; };
-		C4F009FA1C960382001BE121 /* ChaosGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F01C960382001BE121 /* ChaosGL.cpp */; };
 		C4F009FB1C960382001BE121 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F11C960382001BE121 /* Drawable.cpp */; };
 		C4F009FC1C960382001BE121 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F21C960382001BE121 /* Exception.cpp */; };
 		C4F009FD1C960382001BE121 /* FragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F31C960382001BE121 /* FragmentShader.cpp */; };
@@ -58,33 +60,46 @@
 		C4F00A141C9603C0001BE121 /* colormask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0A1C9603C0001BE121 /* colormask.cpp */; };
 		C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0B1C9603C0001BE121 /* depthmask.cpp */; };
 		C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */; };
-		C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A1F1C963269001BE121 /* tattrib_loop.hh */; };
 		C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A251C964DD5001BE121 /* tgeom.hpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		C4B635161CA0C26B00D406C0 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.xml";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(INPUT_FILE_NAME).c",
+			);
+			script = "cd \"$INPUT_FILE_DIR\"\n/usr/bin/xxd -i \"$INPUT_FILE_NAME\" \"$DERIVED_SOURCES_DIR/$INPUT_FILE_NAME.c\"";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
-		C4AAD5ED1C9449D300C25865 /* PBXContainerItemProxy */ = {
+		C4B6350B1CA0B70600D406C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E61B1C8F23E400AC2C72 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C4E4E6221C8F23E400AC2C72;
 			remoteInfo = ChaosGL;
 		};
-		C4AAD5EF1C9449D300C25865 /* PBXContainerItemProxy */ = {
+		C4B6350D1CA0B70600D406C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = C4E4E6471C8F24AA00AC2C72;
 			remoteInfo = ChaosCore;
 		};
-		C4D6EFC21C8F337A00FEB8BA /* PBXContainerItemProxy */ = {
+		C4B76E821CC10D5600A8A9DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E61B1C8F23E400AC2C72 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C4E4E6221C8F23E400AC2C72;
 			remoteInfo = ChaosGL;
 		};
-		C4D6EFC41C8F337A00FEB8BA /* PBXContainerItemProxy */ = {
+		C4B76E841CC10D5900A8A9DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */;
 			proxyType = 1;
@@ -108,7 +123,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C4AAD5E41C9449B300C25865 /* CopyFiles */ = {
+		C4B634FB1CA0B2C800D406C0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -117,7 +132,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		C4D6EFB91C8F32D800FEB8BA /* CopyFiles */ = {
+		C4B76E741CC105D700A8A9DA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -129,23 +144,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
-		C4AAD5E61C9449B300C25865 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4AAD5E81C9449B300C25865 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4B634D91C9ECF3C00D406C0 /* ttexcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttexcoord.hpp; sourceTree = "<group>"; };
 		C4B634DA1C9ED01B00D406C0 /* texcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texcoord.hpp; sourceTree = "<group>"; };
-		C4B634DC1C9ED20100D406C0 /* ttriangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttriangle.hpp; sourceTree = "<group>"; };
-		C4B634DD1C9ED33E00D406C0 /* tquad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tquad.hpp; sourceTree = "<group>"; };
-		C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4D6EFBD1C8F32D800FEB8BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
-		C4D6EFCC1C8F368800FEB8BA /* ChaosGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosGL.hpp; sourceTree = "<group>"; };
-		C4D6EFD11C8F3CBC00FEB8BA /* main.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.vs.glsl; sourceTree = "<group>"; };
-		C4D6EFD31C8F3FE600FEB8BA /* main.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.fs.glsl; sourceTree = "<group>"; };
+		C4B634DC1C9ED20100D406C0 /* ttriangle3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttriangle3.hpp; sourceTree = "<group>"; };
+		C4B634E11C9F410200D406C0 /* Framebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Framebuffer.cpp; sourceTree = "<group>"; };
+		C4B634E21C9F410200D406C0 /* Framebuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Framebuffer.hpp; sourceTree = "<group>"; };
+		C4B634E51C9F61F200D406C0 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		C4B634E61C9F61F200D406C0 /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		C4B634E91C9F62D200D406C0 /* ChaosGL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChaosGL.hpp; sourceTree = "<group>"; };
+		C4B634EA1C9F6B3200D406C0 /* Texture2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture2D.cpp; sourceTree = "<group>"; };
+		C4B634EB1C9F6B3200D406C0 /* Texture2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture2D.hpp; sourceTree = "<group>"; };
+		C4B634EE1C9F90B100D406C0 /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
+		C4B634F61C9F9BCE00D406C0 /* ttexcoord2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttexcoord2D.hpp; sourceTree = "<group>"; };
+		C4B634F71CA0A5CE00D406C0 /* ttexcoord2D_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttexcoord2D_list.hpp; sourceTree = "<group>"; };
+		C4B634FD1CA0B2C800D406C0 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B635041CA0B32800D406C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4B635181CA0C3FC00D406C0 /* Manifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Manifest.xml; sourceTree = "<group>"; };
+		C4B76E6B1CBFCF7B00A8A9DA /* tbasis3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tbasis3.hpp; sourceTree = "<group>"; };
+		C4B76E6C1CBFD1EE00A8A9DA /* ttriangle2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttriangle2.hpp; sourceTree = "<group>"; };
+		C4B76E6E1CBFD39800A8A9DA /* triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = triangle.hpp; sourceTree = "<group>"; };
+		C4B76E711CC07B3600A8A9DA /* basis.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basis.hpp; sourceTree = "<group>"; };
+		C4B76E761CC105D700A8A9DA /* ChaosGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B76E781CC105D700A8A9DA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4B76E7F1CC1075500A8A9DA /* attrib_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib_list.hpp; sourceTree = "<group>"; };
+		C4B76E8B1CC1133A00A8A9DA /* basis.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basis.hpp; sourceTree = "<group>"; };
+		C4B76E8C1CC11A2000A8A9DA /* basis_func.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basis_func.hpp; sourceTree = "<group>"; };
+		C4B76E8D1CC12A2600A8A9DA /* geom_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = geom_list.hpp; sourceTree = "<group>"; };
 		C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChaosGL.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChaosCore.xcodeproj; path = ../ChaosCore/ChaosCore.xcodeproj; sourceTree = "<group>"; };
 		C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C4EAA3EF1CA0D63E005D815B /* Resources.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Resources.hpp; sourceTree = "<group>"; };
 		C4F009CB1C960304001BE121 /* string_func_glm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string_func_glm.hpp; sourceTree = "<group>"; };
 		C4F009CD1C960326001BE121 /* attrib_func.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib_func.hpp; sourceTree = "<group>"; };
 		C4F009CF1C960326001BE121 /* attrib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attrib.hpp; sourceTree = "<group>"; };
@@ -154,7 +183,6 @@
 		C4F009D21C960326001BE121 /* rect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rect.hpp; sourceTree = "<group>"; };
 		C4F009D31C960326001BE121 /* size.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = size.hpp; sourceTree = "<group>"; };
 		C4F009DB1C960369001BE121 /* Buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
-		C4F009DC1C960369001BE121 /* ChaosGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosGL.hpp; sourceTree = "<group>"; };
 		C4F009DD1C960369001BE121 /* Drawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
 		C4F009DE1C960369001BE121 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
 		C4F009DF1C960369001BE121 /* FragmentShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FragmentShader.hpp; sourceTree = "<group>"; };
@@ -164,7 +192,6 @@
 		C4F009E31C960369001BE121 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		C4F009E41C960369001BE121 /* VertexShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexShader.hpp; sourceTree = "<group>"; };
 		C4F009EF1C960382001BE121 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
-		C4F009F01C960382001BE121 /* ChaosGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosGL.cpp; sourceTree = "<group>"; };
 		C4F009F11C960382001BE121 /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
 		C4F009F21C960382001BE121 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
 		C4F009F31C960382001BE121 /* FragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FragmentShader.cpp; sourceTree = "<group>"; };
@@ -186,32 +213,27 @@
 		C4F00A1C1C963185001BE121 /* tattrib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib.hpp; sourceTree = "<group>"; };
 		C4F00A1D1C9631B5001BE121 /* tattrib_countable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_countable.hpp; sourceTree = "<group>"; };
 		C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_list.hpp; sourceTree = "<group>"; };
-		C4F00A1F1C963269001BE121 /* tattrib_loop.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tattrib_loop.hh; sourceTree = "<group>"; };
 		C4F00A251C964DD5001BE121 /* tgeom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tgeom.hpp; sourceTree = "<group>"; };
 		C4F00A271C964E6B001BE121 /* tgeom_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tgeom_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C4AAD5E31C9449B300C25865 /* Frameworks */ = {
+		C4B634FA1CA0B2C800D406C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AAD5F61C944A1500C25865 /* libglfw.3.1.dylib in Frameworks */,
-				C4AAD5F51C944A0500C25865 /* OpenGL.framework in Frameworks */,
-				C4AAD5F41C9449FD00C25865 /* libChaosGL.dylib in Frameworks */,
-				C4AAD5F11C9449F600C25865 /* libChaosCore.dylib in Frameworks */,
+				C4B635091CA0B6FF00D406C0 /* libChaosGL.dylib in Frameworks */,
+				C4B6350A1CA0B6FF00D406C0 /* libChaosCore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4D6EFB81C8F32D800FEB8BA /* Frameworks */ = {
+		C4B76E731CC105D700A8A9DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AAD5541C919B0F00C25865 /* libglfw.3.1.dylib in Frameworks */,
-				C4AAD5551C919B0F00C25865 /* libgtest.a in Frameworks */,
-				C4D6EFC81C8F338D00FEB8BA /* OpenGL.framework in Frameworks */,
-				C4D6EFC61C8F338500FEB8BA /* libChaosGL.dylib in Frameworks */,
-				C4D6EFC71C8F338500FEB8BA /* libChaosCore.dylib in Frameworks */,
+				C4B76E881CC10D8700A8A9DA /* libgtest.a in Frameworks */,
+				C4B76E861CC10D6200A8A9DA /* libChaosGL.dylib in Frameworks */,
+				C4B76E871CC10D6200A8A9DA /* libChaosCore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F00A1B1C963163001BE121 /* attrib */,
+				C4B76E701CBFFB1900A8A9DA /* basis */,
 				C4F00A241C964D93001BE121 /* geom */,
 				C4B634DB1C9ED1DD00D406C0 /* primitive */,
 				C4B634D81C9ECF0600D406C0 /* texcoord */,
@@ -240,6 +263,7 @@
 				C4F009D21C960326001BE121 /* rect.hpp */,
 				C4F009D31C960326001BE121 /* size.hpp */,
 				C4B634DA1C9ED01B00D406C0 /* texcoord.hpp */,
+				C4B76E711CC07B3600A8A9DA /* basis.hpp */,
 			);
 			name = Templates;
 			sourceTree = "<group>";
@@ -261,27 +285,19 @@
 			name = Structs;
 			sourceTree = "<group>";
 		};
-		C4AAD5E71C9449B300C25865 /* Playground */ = {
-			isa = PBXGroup;
-			children = (
-				C4AAD5E81C9449B300C25865 /* main.cpp */,
-			);
-			path = Playground;
-			sourceTree = "<group>";
-		};
 		C4AAD5FF1C944A7E00C25865 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				C4F009EF1C960382001BE121 /* Buffer.cpp */,
 				C4F009DB1C960369001BE121 /* Buffer.hpp */,
-				C4F009F01C960382001BE121 /* ChaosGL.cpp */,
-				C4F009DC1C960369001BE121 /* ChaosGL.hpp */,
 				C4F009F11C960382001BE121 /* Drawable.cpp */,
 				C4F009DD1C960369001BE121 /* Drawable.hpp */,
 				C4F009F21C960382001BE121 /* Exception.cpp */,
 				C4F009DE1C960369001BE121 /* Exception.hpp */,
 				C4F009F31C960382001BE121 /* FragmentShader.cpp */,
 				C4F009DF1C960369001BE121 /* FragmentShader.hpp */,
+				C4B634E11C9F410200D406C0 /* Framebuffer.cpp */,
+				C4B634E21C9F410200D406C0 /* Framebuffer.hpp */,
 				C4F009F41C960382001BE121 /* GeometryShader.cpp */,
 				C4F009E01C960369001BE121 /* GeometryShader.hpp */,
 				C4F009F51C960382001BE121 /* Program.cpp */,
@@ -290,6 +306,10 @@
 				C4F009E21C960369001BE121 /* Renderpass.hpp */,
 				C4F009F71C960382001BE121 /* Shader.cpp */,
 				C4F009E31C960369001BE121 /* Shader.hpp */,
+				C4B634E51C9F61F200D406C0 /* Texture.cpp */,
+				C4B634E61C9F61F200D406C0 /* Texture.hpp */,
+				C4B634EA1C9F6B3200D406C0 /* Texture2D.cpp */,
+				C4B634EB1C9F6B3200D406C0 /* Texture2D.hpp */,
 				C4F009F81C960382001BE121 /* VertexShader.cpp */,
 				C4F009E41C960369001BE121 /* VertexShader.hpp */,
 			);
@@ -308,6 +328,7 @@
 			children = (
 				C4F009CB1C960304001BE121 /* string_func_glm.hpp */,
 				C4F009CD1C960326001BE121 /* attrib_func.hpp */,
+				C4B76E8C1CC11A2000A8A9DA /* basis_func.hpp */,
 			);
 			name = Functions;
 			sourceTree = "<group>";
@@ -316,6 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				C4B634D91C9ECF3C00D406C0 /* ttexcoord.hpp */,
+				C4B634F61C9F9BCE00D406C0 /* ttexcoord2D.hpp */,
+				C4B634F71CA0A5CE00D406C0 /* ttexcoord2D_list.hpp */,
 			);
 			name = texcoord;
 			sourceTree = "<group>";
@@ -323,10 +346,88 @@
 		C4B634DB1C9ED1DD00D406C0 /* primitive */ = {
 			isa = PBXGroup;
 			children = (
-				C4B634DC1C9ED20100D406C0 /* ttriangle.hpp */,
-				C4B634DD1C9ED33E00D406C0 /* tquad.hpp */,
+				C4B76E6D1CBFD37700A8A9DA /* triangle */,
+				C4B76E6E1CBFD39800A8A9DA /* triangle.hpp */,
 			);
 			name = primitive;
+			sourceTree = "<group>";
+		};
+		C4B634FE1CA0B2C800D406C0 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				C4B635171CA0C3D100D406C0 /* Resources */,
+				C4B635041CA0B32800D406C0 /* main.cpp */,
+				C4EAA3EF1CA0D63E005D815B /* Resources.hpp */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		C4B635171CA0C3D100D406C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B635181CA0C3FC00D406C0 /* Manifest.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4B76E6D1CBFD37700A8A9DA /* triangle */ = {
+			isa = PBXGroup;
+			children = (
+				C4B634DC1C9ED20100D406C0 /* ttriangle3.hpp */,
+				C4B76E6C1CBFD1EE00A8A9DA /* ttriangle2.hpp */,
+			);
+			name = triangle;
+			sourceTree = "<group>";
+		};
+		C4B76E701CBFFB1900A8A9DA /* basis */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E6B1CBFCF7B00A8A9DA /* tbasis3.hpp */,
+			);
+			name = basis;
+			sourceTree = "<group>";
+		};
+		C4B76E771CC105D700A8A9DA /* ChaosGLTest */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E7D1CC1071D00A8A9DA /* Templates */,
+				C4B76E781CC105D700A8A9DA /* main.cpp */,
+			);
+			path = ChaosGLTest;
+			sourceTree = "<group>";
+		};
+		C4B76E7D1CC1071D00A8A9DA /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E811CC10BE600A8A9DA /* attrib */,
+				C4B76E8A1CC112F200A8A9DA /* basis */,
+				C4B76E891CC112EC00A8A9DA /* geom */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		C4B76E811CC10BE600A8A9DA /* attrib */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E7F1CC1075500A8A9DA /* attrib_list.hpp */,
+			);
+			name = attrib;
+			sourceTree = "<group>";
+		};
+		C4B76E891CC112EC00A8A9DA /* geom */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E8D1CC12A2600A8A9DA /* geom_list.hpp */,
+			);
+			name = geom;
+			sourceTree = "<group>";
+		};
+		C4B76E8A1CC112F200A8A9DA /* basis */ = {
+			isa = PBXGroup;
+			children = (
+				C4B76E8B1CC1133A00A8A9DA /* basis.hpp */,
+			);
+			name = basis;
 			sourceTree = "<group>";
 		};
 		C4C1A8D11C9020AC00753C31 /* ChaosGL */ = {
@@ -337,40 +438,21 @@
 				C4AAD6101C946C1500C25865 /* Interfaces */,
 				C4AAD5FF1C944A7E00C25865 /* Classes */,
 				C4AAD5CC1C92FCCC00C25865 /* Structs */,
+				C4B634E91C9F62D200D406C0 /* ChaosGL.hpp */,
+				C4B634EE1C9F90B100D406C0 /* ChaosGL.cpp */,
 			);
 			path = ChaosGL;
-			sourceTree = "<group>";
-		};
-		C4D6EFBC1C8F32D800FEB8BA /* ChaosGLTest */ = {
-			isa = PBXGroup;
-			children = (
-				C4D6EFD21C8F3D0700FEB8BA /* shaders */,
-				C4D6EFBD1C8F32D800FEB8BA /* main.cpp */,
-				C4D6EFCB1C8F368800FEB8BA /* ChaosGL.cpp */,
-				C4D6EFCC1C8F368800FEB8BA /* ChaosGL.hpp */,
-			);
-			path = ChaosGLTest;
-			sourceTree = "<group>";
-		};
-		C4D6EFD21C8F3D0700FEB8BA /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-				C4D6EFD11C8F3CBC00FEB8BA /* main.vs.glsl */,
-				C4D6EFD31C8F3FE600FEB8BA /* main.fs.glsl */,
-			);
-			name = shaders;
 			sourceTree = "<group>";
 		};
 		C4E4E61A1C8F23E400AC2C72 = {
 			isa = PBXGroup;
 			children = (
-				C4AAD5521C919B0F00C25865 /* libglfw.3.1.dylib */,
 				C4AAD5531C919B0F00C25865 /* libgtest.a */,
 				C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */,
 				C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */,
 				C4C1A8D11C9020AC00753C31 /* ChaosGL */,
-				C4D6EFBC1C8F32D800FEB8BA /* ChaosGLTest */,
-				C4AAD5E71C9449B300C25865 /* Playground */,
+				C4B76E771CC105D700A8A9DA /* ChaosGLTest */,
+				C4B634FE1CA0B2C800D406C0 /* Playground */,
 				C4E4E6241C8F23E400AC2C72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -379,8 +461,8 @@
 			isa = PBXGroup;
 			children = (
 				C4E4E6231C8F23E400AC2C72 /* libChaosGL.dylib */,
-				C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */,
-				C4AAD5E61C9449B300C25865 /* Playground */,
+				C4B634FD1CA0B2C800D406C0 /* Playground */,
+				C4B76E761CC105D700A8A9DA /* ChaosGLTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,7 +481,6 @@
 				C4F00A1C1C963185001BE121 /* tattrib.hpp */,
 				C4F00A1D1C9631B5001BE121 /* tattrib_countable.hpp */,
 				C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */,
-				C4F00A1F1C963269001BE121 /* tattrib_loop.hh */,
 			);
 			name = attrib;
 			sourceTree = "<group>";
@@ -427,12 +508,13 @@
 				C4F009E51C960369001BE121 /* Buffer.hpp in Headers */,
 				C4F009DA1C960326001BE121 /* size.hpp in Headers */,
 				C4F009D91C960326001BE121 /* rect.hpp in Headers */,
+				C4B634E41C9F410200D406C0 /* Framebuffer.hpp in Headers */,
+				C4B635191CA0C7EE00D406C0 /* ChaosGL.hpp in Headers */,
 				C4F009D71C960326001BE121 /* geom.hpp in Headers */,
-				C4F00A201C963269001BE121 /* tattrib_loop.hh in Headers */,
 				C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */,
 				C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */,
-				C4F009E61C960369001BE121 /* ChaosGL.hpp in Headers */,
 				C4F009EB1C960369001BE121 /* Program.hpp in Headers */,
+				C4B634E81C9F61F200D406C0 /* Texture.hpp in Headers */,
 				C4F009EE1C960369001BE121 /* VertexShader.hpp in Headers */,
 				C4F00A0E1C9603C0001BE121 /* clearmask.hpp in Headers */,
 				C4F00A101C9603C0001BE121 /* depthmask.hpp in Headers */,
@@ -443,6 +525,7 @@
 				C4F009E71C960369001BE121 /* Drawable.hpp in Headers */,
 				C4F009CC1C960304001BE121 /* string_func_glm.hpp in Headers */,
 				C4F009D81C960326001BE121 /* primitive.hpp in Headers */,
+				C4B634ED1C9F6B3200D406C0 /* Texture2D.hpp in Headers */,
 				C4F00A0D1C9603C0001BE121 /* cap.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,42 +533,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C4AAD5E51C9449B300C25865 /* Playground */ = {
+		C4B634FC1CA0B2C800D406C0 /* Playground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4AAD5EA1C9449B300C25865 /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildConfigurationList = C4B635011CA0B2C800D406C0 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
-				C4AAD5E21C9449B300C25865 /* Sources */,
-				C4AAD5E31C9449B300C25865 /* Frameworks */,
-				C4AAD5E41C9449B300C25865 /* CopyFiles */,
+				C4B634F91CA0B2C800D406C0 /* Sources */,
+				C4B634FA1CA0B2C800D406C0 /* Frameworks */,
+				C4B634FB1CA0B2C800D406C0 /* CopyFiles */,
 			);
 			buildRules = (
+				C4B635161CA0C26B00D406C0 /* PBXBuildRule */,
 			);
 			dependencies = (
-				C4AAD5EE1C9449D300C25865 /* PBXTargetDependency */,
-				C4AAD5F01C9449D300C25865 /* PBXTargetDependency */,
+				C4B6350C1CA0B70600D406C0 /* PBXTargetDependency */,
+				C4B6350E1CA0B70600D406C0 /* PBXTargetDependency */,
 			);
 			name = Playground;
 			productName = Playground;
-			productReference = C4AAD5E61C9449B300C25865 /* Playground */;
+			productReference = C4B634FD1CA0B2C800D406C0 /* Playground */;
 			productType = "com.apple.product-type.tool";
 		};
-		C4D6EFBA1C8F32D800FEB8BA /* ChaosGLTest */ = {
+		C4B76E751CC105D700A8A9DA /* ChaosGLTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4D6EFC11C8F32D800FEB8BA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */;
+			buildConfigurationList = C4B76E7A1CC105D700A8A9DA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */;
 			buildPhases = (
-				C4D6EFB71C8F32D800FEB8BA /* Sources */,
-				C4D6EFB81C8F32D800FEB8BA /* Frameworks */,
-				C4D6EFB91C8F32D800FEB8BA /* CopyFiles */,
+				C4B76E721CC105D700A8A9DA /* Sources */,
+				C4B76E731CC105D700A8A9DA /* Frameworks */,
+				C4B76E741CC105D700A8A9DA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C4D6EFC31C8F337A00FEB8BA /* PBXTargetDependency */,
-				C4D6EFC51C8F337A00FEB8BA /* PBXTargetDependency */,
+				C4B76E851CC10D5900A8A9DA /* PBXTargetDependency */,
+				C4B76E831CC10D5600A8A9DA /* PBXTargetDependency */,
 			);
 			name = ChaosGLTest;
 			productName = ChaosGLTest;
-			productReference = C4D6EFBB1C8F32D800FEB8BA /* ChaosGLTest */;
+			productReference = C4B76E761CC105D700A8A9DA /* ChaosGLTest */;
 			productType = "com.apple.product-type.tool";
 		};
 		C4E4E6221C8F23E400AC2C72 /* ChaosGL */ = {
@@ -512,14 +596,14 @@
 		C4E4E61B1C8F23E400AC2C72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fu Lam Diep";
 				TargetAttributes = {
-					C4AAD5E51C9449B300C25865 = {
+					C4B634FC1CA0B2C800D406C0 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					C4D6EFBA1C8F32D800FEB8BA = {
-						CreatedOnToolsVersion = 7.2.1;
+					C4B76E751CC105D700A8A9DA = {
+						CreatedOnToolsVersion = 7.3;
 					};
 					C4E4E6221C8F23E400AC2C72 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -545,8 +629,8 @@
 			projectRoot = "";
 			targets = (
 				C4E4E6221C8F23E400AC2C72 /* ChaosGL */,
-				C4D6EFBA1C8F32D800FEB8BA /* ChaosGLTest */,
-				C4AAD5E51C9449B300C25865 /* Playground */,
+				C4B634FC1CA0B2C800D406C0 /* Playground */,
+				C4B76E751CC105D700A8A9DA /* ChaosGLTest */,
 			);
 		};
 /* End PBXProject section */
@@ -562,20 +646,20 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C4AAD5E21C9449B300C25865 /* Sources */ = {
+		C4B634F91CA0B2C800D406C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AAD5E91C9449B300C25865 /* main.cpp in Sources */,
+				C4EAA3EE1CA0D4C4005D815B /* Manifest.xml in Sources */,
+				C4B635051CA0B32800D406C0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4D6EFB71C8F32D800FEB8BA /* Sources */ = {
+		C4B76E721CC105D700A8A9DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D6EFCD1C8F368800FEB8BA /* ChaosGL.cpp in Sources */,
-				C4D6EFBE1C8F32D800FEB8BA /* main.cpp in Sources */,
+				C4B76E791CC105D700A8A9DA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,12 +667,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F009FA1C960382001BE121 /* ChaosGL.cpp in Sources */,
 				C4F00A141C9603C0001BE121 /* colormask.cpp in Sources */,
 				C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */,
 				C4F00A131C9603C0001BE121 /* clearmask.cpp in Sources */,
 				C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */,
+				C4B634EC1C9F6B3200D406C0 /* Texture2D.cpp in Sources */,
+				C4B634EF1C9F90B100D406C0 /* ChaosGL.cpp in Sources */,
+				C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */,
 				C4F009FB1C960382001BE121 /* Drawable.cpp in Sources */,
+				C4B634E71C9F61F200D406C0 /* Texture.cpp in Sources */,
 				C4F009FD1C960382001BE121 /* FragmentShader.cpp in Sources */,
 				C4F00A001C960382001BE121 /* Renderpass.cpp in Sources */,
 				C4F009F91C960382001BE121 /* Buffer.cpp in Sources */,
@@ -604,25 +691,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4AAD5EE1C9449D300C25865 /* PBXTargetDependency */ = {
+		C4B6350C1CA0B70600D406C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C4E4E6221C8F23E400AC2C72 /* ChaosGL */;
-			targetProxy = C4AAD5ED1C9449D300C25865 /* PBXContainerItemProxy */;
+			targetProxy = C4B6350B1CA0B70600D406C0 /* PBXContainerItemProxy */;
 		};
-		C4AAD5F01C9449D300C25865 /* PBXTargetDependency */ = {
+		C4B6350E1CA0B70600D406C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChaosCore;
-			targetProxy = C4AAD5EF1C9449D300C25865 /* PBXContainerItemProxy */;
+			targetProxy = C4B6350D1CA0B70600D406C0 /* PBXContainerItemProxy */;
 		};
-		C4D6EFC31C8F337A00FEB8BA /* PBXTargetDependency */ = {
+		C4B76E831CC10D5600A8A9DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C4E4E6221C8F23E400AC2C72 /* ChaosGL */;
-			targetProxy = C4D6EFC21C8F337A00FEB8BA /* PBXContainerItemProxy */;
+			targetProxy = C4B76E821CC10D5600A8A9DA /* PBXContainerItemProxy */;
 		};
-		C4D6EFC51C8F337A00FEB8BA /* PBXTargetDependency */ = {
+		C4B76E851CC10D5900A8A9DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChaosCore;
-			targetProxy = C4D6EFC41C8F337A00FEB8BA /* PBXContainerItemProxy */;
+			targetProxy = C4B76E841CC10D5900A8A9DA /* PBXContainerItemProxy */;
 		};
 		C4E4E6A51C8F275D00AC2C72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -632,7 +719,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C4AAD5EB1C9449B300C25865 /* Debug */ = {
+		C4B635021CA0B2C800D406C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
@@ -643,7 +730,7 @@
 			};
 			name = Debug;
 		};
-		C4AAD5EC1C9449B300C25865 /* Release */ = {
+		C4B635031CA0B2C800D406C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
@@ -654,9 +741,21 @@
 			};
 			name = Release;
 		};
-		C4D6EFBF1C8F32D800FEB8BA /* Debug */ = {
+		C4B76E7B1CC105D700A8A9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					../ChaosCore,
+					/opt/local/include,
+					../ChaosGL,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/lib,
@@ -665,9 +764,17 @@
 			};
 			name = Debug;
 		};
-		C4D6EFC01C8F32D800FEB8BA /* Release */ = {
+		C4B76E7C1CC105D700A8A9DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../ChaosCore,
+					/opt/local/include,
+					../ChaosGL,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/lib,
@@ -698,13 +805,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED,
 					"DEBUG=1",
-					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -721,6 +828,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
 			};
@@ -748,8 +856,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -764,6 +873,8 @@
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -771,6 +882,7 @@
 		C4E4E62F1C8F23E400AC2C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -784,6 +896,7 @@
 		C4E4E6301C8F23E400AC2C72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -797,20 +910,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4AAD5EA1C9449B300C25865 /* Build configuration list for PBXNativeTarget "Playground" */ = {
+		C4B635011CA0B2C800D406C0 /* Build configuration list for PBXNativeTarget "Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4AAD5EB1C9449B300C25865 /* Debug */,
-				C4AAD5EC1C9449B300C25865 /* Release */,
+				C4B635021CA0B2C800D406C0 /* Debug */,
+				C4B635031CA0B2C800D406C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4D6EFC11C8F32D800FEB8BA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */ = {
+		C4B76E7A1CC105D700A8A9DA /* Build configuration list for PBXNativeTarget "ChaosGLTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4D6EFBF1C8F32D800FEB8BA /* Debug */,
-				C4D6EFC01C8F32D800FEB8BA /* Release */,
+				C4B76E7B1CC105D700A8A9DA /* Debug */,
+				C4B76E7C1CC105D700A8A9DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

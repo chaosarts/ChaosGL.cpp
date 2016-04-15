@@ -5,46 +5,44 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Fragment_h_
-#define ChaosGL_Fragment_h_
+#ifndef ChaosGL_Fragment_hpp
+#define ChaosGL_Fragment_hpp
 
 #include "Shader.hpp"
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {
-
-		class FragmentShader: public Shader
-		{
-		public:
-
-			/**
-			 * Constructor with source and length of source
-			 * @param source The source string
-			 * @param length
-			 */
-			FragmentShader(const char* source, int length);
-
-
-			/**
-			 * Constructor with source as file
-			 * @param filename
-			 */
-			FragmentShader(const char* filename);
-
-
-			/**
-			 * Constructor with no source
-			 */
-			FragmentShader();
-
-
-			/**
-			 * Destructor
-			 */
-			virtual ~FragmentShader();
-		};
+	class FragmentShader: public Shader
+	{
+	public:
+		
+		/**
+		 * Constructor with source and length of source
+		 * @param source The source string
+		 * @param length
+		 */
+		FragmentShader(const char* source, int length);
+		
+		
+		/**
+		 * Constructor with source as file
+		 * @param filename
+		 */
+		FragmentShader(const char* filename);
+		
+		
+		/**
+		 * Constructor with no source
+		 */
+		FragmentShader();
+		
+		
+		/**
+		 * Destructor
+		 */
+		virtual ~FragmentShader();
+	};
 } /* namespace ca */
 
 #endif /* VERTEXSHADER_H_ */

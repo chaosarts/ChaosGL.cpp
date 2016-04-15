@@ -6,8 +6,8 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_tattrib_h
-#define ChaosGL_tattrib_h
+#ifndef ChaosGL_tattrib_hpp
+#define ChaosGL_tattrib_hpp
 
 #include <glm/glm.hpp>
 #include <OpenGL/OpenGL.h>
@@ -20,12 +20,12 @@ namespace chaosgl
 	{
 	public:
 		
+		/** Describes its own type */
 		typedef tattrib<T> Type;
 		
-		/// Provides the data type
+		/** Describes the type of data it holds */
 		typedef T VertexType;
-	
-	public:
+		
 		
 		/**
 		 * Indicates how to store data
@@ -55,7 +55,9 @@ namespace chaosgl
 		}
 		
 		
-		/// Provides the size of the attribute per vertex
+		/** 
+		 * Provides the size of the attribute per vertex
+		 */
 		long byteSizePerVertex () const
 		{
 			return sizeof(VertexType);

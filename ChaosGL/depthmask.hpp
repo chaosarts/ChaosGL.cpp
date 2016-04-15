@@ -5,13 +5,11 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Gldepthbit_h_
-#define ChaosGL_Gldepthbit_h_
+#ifndef ChaosGL_Gldepthbit_hpp
+#define ChaosGL_Gldepthbit_hpp
 
 #include "clearmask.hpp"
-
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {

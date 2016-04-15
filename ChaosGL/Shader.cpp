@@ -6,6 +6,8 @@
  */
 
 #include "Shader.hpp"
+#include <ChaosCore/ChaosCore.hpp>
+#include <sys/stat.h>
 
 namespace chaosgl
 {

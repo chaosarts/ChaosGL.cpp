@@ -6,19 +6,9 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_primitive_hpp_
-#define ChaosGL_primitive_hpp_
+#ifndef ChaosGL_primitive_hpp
+#define ChaosGL_primitive_hpp
 
-#include "ttriangle.hpp"
-#include "tquad.hpp"
+#include "triangle.hpp"
 
-namespace chaosgl
-{
-	typedef ttriangle<float, glm::highp> highp_triangle;
-	typedef highp_triangle triangle;
-	
-		
-	typedef tquad<float, glm::highp> highp_quad;
-	typedef highp_quad quad;
-}
 #endif

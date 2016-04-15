@@ -5,11 +5,10 @@
  *      Author: chaos
  */
 
-#ifndef ChaosGL_Glcap_h_
-#define ChaosGL_Glcap_h_
+#ifndef ChaosGL_Glcap_hpp
+#define ChaosGL_Glcap_hpp
 
-#include <OpenGL/gl.h>
-#include <OpenGL/gl3.h>
+#include "ChaosGL.hpp"
 
 namespace chaosgl
 {

@@ -7,13 +7,17 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#ifndef ChaosGL_attrib_hpp_
-#define ChaosGL_attrib_hpp_
+#ifndef ChaosGL_attrib_hpp
+#define ChaosGL_attrib_hpp
 
 #include "attrib_func.hpp"
 #include "tattrib.hpp"
 #include "tattrib_countable.hpp"
 #include "tattrib_list.hpp"
-#include "tattrib_loop.hh"
+#include <glm/glm.hpp>
+
+namespace chaosgl
+{
+}
 
 #endif /* attrib_h */
