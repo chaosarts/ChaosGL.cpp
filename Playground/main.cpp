@@ -11,8 +11,34 @@
 #include <ChaosGL/geom.hpp>
 #include <ChaosGL/basis.hpp>
 
+class A
+{
+public:
+	A () {}
+	~A ()
+	{
+		fprintf(stdout, "Destruct A.");
+	}
+};
+
+class B: private A
+{
+public:
+	B () {}
+	virtual ~B ()
+	{
+		fprintf(stdout, "Destruct B.");
+	}
+};
+
+
+void test ()
+{
+	B b = B();
+}
+
 int main (int argc, const char** argv)
 {
-	chaosgl::geom g;
+	test();
 	return 0;
 }

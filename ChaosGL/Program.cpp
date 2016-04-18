@@ -9,10 +9,32 @@
 #include "Exception.hpp"
 #include "Shader.hpp"
 #include <ChaosCore/ChaosCore.hpp>
+#include <map>
 
 namespace chaosgl
 {
-	Program::Program() {}
+	std::map<GLint, Program*> _idProgramMap;
+	
+	
+	GLint Program::current()
+	{
+		GLint param;
+		glGetIntegerv(GL_CURRENT_PROGRAM, &param);
+		return param;
+	}
+	
+	
+	Program* Program::get (GLuint index)
+	{
+		std::map<GLint, Program*>::iterator it = _idProgramMap.find(index);
+		return it == _idProgramMap.end() ? nullptr : it->second;
+	}
+	
+	
+	Program::Program()
+	{
+		_idProgramMap[getId()] = this;
+	}
 	
 	
 	Program::~Program()
@@ -64,21 +86,19 @@ namespace chaosgl
 	}
 	
 	
-	void Program::attachShader (GLuint shader)
+	GLenum Program::attachShader (GLuint shader)
 	{
 		glAttachShader(getId(), shader);
+		const GLenum error = glGetError();
+		chaos::info("<Program> Error result of attachShader: %i", error);
+		return error;
 	}
 	
 	
-	void Program::attachShader (chaosgl::Shader *shader)
+	GLenum Program::attachShader (chaosgl::Shader *shader)
 	{
-		try {
-			shader->compile();
-			attachShader (shader->getId());
-		}
-		catch (chaosgl::Exception* e) {
-			chaos::warn("<Program> Shader not attached to program: %s", e->message);
-		}
+		shader->compile();
+		return attachShader (shader->getId());
 	}
 	
 	

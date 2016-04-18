@@ -23,15 +23,13 @@ namespace chaosgl
 	}
 	
 	
-	Shader::Shader(GLenum type) : type(type)
-	{
-		
-	}
+	Shader::Shader(GLenum type) : type(type) {}
 	
 	
 	Shader::~Shader()
 	{
-		glDeleteShader(_id);
+		if (0 != _id) glDeleteShader(_id);
+		_sources.clear();
 	}
 	
 	
@@ -42,7 +40,7 @@ namespace chaosgl
 		glShaderSource(getId(), GLsizei(_sources.size()), _sources.data(), nullptr);
 		
 		GLenum error = glGetError();
-		chaos::info("<Shader> Result of 'init': %i", error);
+		chaos::info("<Shader> Error of 'init': %i", error);
 		
 		_initialized = GL_NO_ERROR == error;
 		return error;

@@ -1,29 +1,23 @@
 //
-//  Bufferable.hpp
+//  Drawable.hpp
 //  ChaosGL
 //
-//  Created by Fu Lam Diep on 12.03.16.
+//  Created by Fu Lam Diep on 18.04.16.
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
 #ifndef ChaosGL_Drawable_hpp
 #define ChaosGL_Drawable_hpp
 
-#include <vector>
-#include <OpenGL/OpenGL.h>
-#include "Buffer.hpp"
-
 namespace chaosgl
 {
-	
+	class Program;
 	class Drawable
 	{
 	public:
 		
-		std::vector<Buffer> getBuffers ();
-		
-		void draw ();
+		void draw (Program* program);
 	};
-	
 }
-#endif
+
+#endif /* Drawable_hpp */

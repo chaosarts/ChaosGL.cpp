@@ -9,7 +9,7 @@
 
 namespace chaosgl
 {
-		clearmask::clearmask (GLbitfield field) : field(field) {}
-		clearmask::~clearmask() {};
+	clearmask::clearmask (GLbitfield field) : field(field) {}
+	clearmask::~clearmask() {};
 } /* namespace ca */
 

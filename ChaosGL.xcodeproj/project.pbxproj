@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44BD0321CC5362300F51AFA /* depthtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD0301CC5362300F51AFA /* depthtest.cpp */; };
+		C44BD0331CC5362300F51AFA /* depthtest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0311CC5362300F51AFA /* depthtest.hpp */; };
+		C44BD0391CC5707B00F51AFA /* stenciltest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD0371CC5707B00F51AFA /* stenciltest.cpp */; };
+		C44BD03A1CC5707B00F51AFA /* stenciltest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0381CC5707B00F51AFA /* stenciltest.hpp */; };
+		C44BD0411CC57CFD00F51AFA /* scissortest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD03F1CC57CFD00F51AFA /* scissortest.cpp */; };
+		C44BD0421CC57CFD00F51AFA /* scissortest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0401CC57CFD00F51AFA /* scissortest.hpp */; };
+		C44BD04A1CC5818B00F51AFA /* Drawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0481CC5818B00F51AFA /* Drawable.hpp */; };
+		C4AB858D1CC3F48100A69438 /* base.vertex.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C4AB85881CC3E41300A69438 /* base.vertex.glsl */; };
+		C4AB858E1CC3F48100A69438 /* base.fragment.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C4AB85891CC3E42400A69438 /* base.fragment.glsl */; };
 		C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634E11C9F410200D406C0 /* Framebuffer.cpp */; };
 		C4B634E41C9F410200D406C0 /* Framebuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4B634E21C9F410200D406C0 /* Framebuffer.hpp */; };
 		C4B634E71C9F61F200D406C0 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634E51C9F61F200D406C0 /* Texture.cpp */; };
@@ -33,7 +42,6 @@
 		C4F009D91C960326001BE121 /* rect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D21C960326001BE121 /* rect.hpp */; };
 		C4F009DA1C960326001BE121 /* size.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009D31C960326001BE121 /* size.hpp */; };
 		C4F009E51C960369001BE121 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DB1C960369001BE121 /* Buffer.hpp */; };
-		C4F009E71C960369001BE121 /* Drawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DD1C960369001BE121 /* Drawable.hpp */; };
 		C4F009E81C960369001BE121 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DE1C960369001BE121 /* Exception.hpp */; };
 		C4F009E91C960369001BE121 /* FragmentShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009DF1C960369001BE121 /* FragmentShader.hpp */; };
 		C4F009EA1C960369001BE121 /* GeometryShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009E01C960369001BE121 /* GeometryShader.hpp */; };
@@ -42,7 +50,6 @@
 		C4F009ED1C960369001BE121 /* Shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009E31C960369001BE121 /* Shader.hpp */; };
 		C4F009EE1C960369001BE121 /* VertexShader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F009E41C960369001BE121 /* VertexShader.hpp */; };
 		C4F009F91C960382001BE121 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009EF1C960382001BE121 /* Buffer.cpp */; };
-		C4F009FB1C960382001BE121 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F11C960382001BE121 /* Drawable.cpp */; };
 		C4F009FC1C960382001BE121 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F21C960382001BE121 /* Exception.cpp */; };
 		C4F009FD1C960382001BE121 /* FragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F31C960382001BE121 /* FragmentShader.cpp */; };
 		C4F009FE1C960382001BE121 /* GeometryShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009F41C960382001BE121 /* GeometryShader.cpp */; };
@@ -61,9 +68,21 @@
 		C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0B1C9603C0001BE121 /* depthmask.cpp */; };
 		C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */; };
 		C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F00A251C964DD5001BE121 /* tgeom.hpp */; };
+		C4F1FBD41CC161B300443DB8 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F1FBD31CC161B300443DB8 /* libglfw.3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
+		C4AB85861CC3E21100A69438 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.glsl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$DERIVED_SOURCES_DIR/${INPUT_FILE_NAME}.c",
+			);
+			script = "cd \"$INPUT_FILE_DIR\"\nxxd -i \"$INPUT_FILE_NAME\" \"$DERIVED_SOURCES_DIR/$INPUT_FILE_NAME.c\"";
+		};
 		C4B635161CA0C26B00D406C0 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.proxy.script;
@@ -78,6 +97,13 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
+		C4AB85A51CC44C7400A69438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4AB85931CC4451F00A69438;
+			remoteInfo = ChaosCoreTest;
+		};
 		C4B6350B1CA0B70600D406C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4E4E61B1C8F23E400AC2C72 /* Project object */;
@@ -144,7 +170,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C44BD0301CC5362300F51AFA /* depthtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = depthtest.cpp; sourceTree = "<group>"; };
+		C44BD0311CC5362300F51AFA /* depthtest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = depthtest.hpp; sourceTree = "<group>"; };
+		C44BD0371CC5707B00F51AFA /* stenciltest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stenciltest.cpp; sourceTree = "<group>"; };
+		C44BD0381CC5707B00F51AFA /* stenciltest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stenciltest.hpp; sourceTree = "<group>"; };
+		C44BD03F1CC57CFD00F51AFA /* scissortest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scissortest.cpp; sourceTree = "<group>"; };
+		C44BD0401CC57CFD00F51AFA /* scissortest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scissortest.hpp; sourceTree = "<group>"; };
+		C44BD0481CC5818B00F51AFA /* Drawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
 		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
+		C4AB85881CC3E41300A69438 /* base.vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.vertex.glsl; sourceTree = "<group>"; };
+		C4AB85891CC3E42400A69438 /* base.fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.fragment.glsl; sourceTree = "<group>"; };
+		C4AB858B1CC3E4FB00A69438 /* Externs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Externs.hpp; sourceTree = "<group>"; };
+		C4AB85A31CC44C7300A69438 /* Program.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Program.hpp; sourceTree = "<group>"; };
 		C4B634D91C9ECF3C00D406C0 /* ttexcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttexcoord.hpp; sourceTree = "<group>"; };
 		C4B634DA1C9ED01B00D406C0 /* texcoord.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texcoord.hpp; sourceTree = "<group>"; };
 		C4B634DC1C9ED20100D406C0 /* ttriangle3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ttriangle3.hpp; sourceTree = "<group>"; };
@@ -183,7 +220,6 @@
 		C4F009D21C960326001BE121 /* rect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rect.hpp; sourceTree = "<group>"; };
 		C4F009D31C960326001BE121 /* size.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = size.hpp; sourceTree = "<group>"; };
 		C4F009DB1C960369001BE121 /* Buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
-		C4F009DD1C960369001BE121 /* Drawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
 		C4F009DE1C960369001BE121 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
 		C4F009DF1C960369001BE121 /* FragmentShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FragmentShader.hpp; sourceTree = "<group>"; };
 		C4F009E01C960369001BE121 /* GeometryShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeometryShader.hpp; sourceTree = "<group>"; };
@@ -192,7 +228,6 @@
 		C4F009E31C960369001BE121 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		C4F009E41C960369001BE121 /* VertexShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexShader.hpp; sourceTree = "<group>"; };
 		C4F009EF1C960382001BE121 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
-		C4F009F11C960382001BE121 /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
 		C4F009F21C960382001BE121 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
 		C4F009F31C960382001BE121 /* FragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FragmentShader.cpp; sourceTree = "<group>"; };
 		C4F009F41C960382001BE121 /* GeometryShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeometryShader.cpp; sourceTree = "<group>"; };
@@ -215,6 +250,9 @@
 		C4F00A1E1C9631DA001BE121 /* tattrib_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tattrib_list.hpp; sourceTree = "<group>"; };
 		C4F00A251C964DD5001BE121 /* tgeom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tgeom.hpp; sourceTree = "<group>"; };
 		C4F00A271C964E6B001BE121 /* tgeom_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tgeom_list.hpp; sourceTree = "<group>"; };
+		C4F1FBD21CC1611200443DB8 /* AbstractTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractTest.hpp; sourceTree = "<group>"; };
+		C4F1FBD31CC161B300443DB8 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		C4F1FBD51CC164FD00443DB8 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F1FBD41CC161B300443DB8 /* libglfw.3.1.dylib in Frameworks */,
 				C4B76E881CC10D8700A8A9DA /* libgtest.a in Frameworks */,
 				C4B76E861CC10D6200A8A9DA /* libChaosGL.dylib in Frameworks */,
 				C4B76E871CC10D6200A8A9DA /* libChaosCore.dylib in Frameworks */,
@@ -268,19 +307,41 @@
 			name = Templates;
 			sourceTree = "<group>";
 		};
-		C4AAD5CC1C92FCCC00C25865 /* Structs */ = {
+		C44BD0351CC5703800F51AFA /* cap */ = {
 			isa = PBXGroup;
 			children = (
-				C4F00A081C9603C0001BE121 /* cap.cpp */,
-				C4F00A031C9603C0001BE121 /* cap.hpp */,
-				C4F00A091C9603C0001BE121 /* clearmask.cpp */,
-				C4F00A041C9603C0001BE121 /* clearmask.hpp */,
+				C44BD0301CC5362300F51AFA /* depthtest.cpp */,
+				C44BD0311CC5362300F51AFA /* depthtest.hpp */,
+				C44BD0371CC5707B00F51AFA /* stenciltest.cpp */,
+				C44BD0381CC5707B00F51AFA /* stenciltest.hpp */,
+				C44BD03F1CC57CFD00F51AFA /* scissortest.cpp */,
+				C44BD0401CC57CFD00F51AFA /* scissortest.hpp */,
+			);
+			name = cap;
+			sourceTree = "<group>";
+		};
+		C44BD0361CC5703F00F51AFA /* clearmask */ = {
+			isa = PBXGroup;
+			children = (
 				C4F00A0A1C9603C0001BE121 /* colormask.cpp */,
 				C4F00A051C9603C0001BE121 /* colormask.hpp */,
 				C4F00A0B1C9603C0001BE121 /* depthmask.cpp */,
 				C4F00A061C9603C0001BE121 /* depthmask.hpp */,
 				C4F00A0C1C9603C0001BE121 /* stencilmask.cpp */,
 				C4F00A071C9603C0001BE121 /* stencilmask.hpp */,
+			);
+			name = clearmask;
+			sourceTree = "<group>";
+		};
+		C4AAD5CC1C92FCCC00C25865 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C44BD0351CC5703800F51AFA /* cap */,
+				C44BD0361CC5703F00F51AFA /* clearmask */,
+				C4F00A081C9603C0001BE121 /* cap.cpp */,
+				C4F00A031C9603C0001BE121 /* cap.hpp */,
+				C4F00A091C9603C0001BE121 /* clearmask.cpp */,
+				C4F00A041C9603C0001BE121 /* clearmask.hpp */,
 			);
 			name = Structs;
 			sourceTree = "<group>";
@@ -290,8 +351,6 @@
 			children = (
 				C4F009EF1C960382001BE121 /* Buffer.cpp */,
 				C4F009DB1C960369001BE121 /* Buffer.hpp */,
-				C4F009F11C960382001BE121 /* Drawable.cpp */,
-				C4F009DD1C960369001BE121 /* Drawable.hpp */,
 				C4F009F21C960382001BE121 /* Exception.cpp */,
 				C4F009DE1C960369001BE121 /* Exception.hpp */,
 				C4F009F31C960382001BE121 /* FragmentShader.cpp */,
@@ -319,6 +378,7 @@
 		C4AAD6101C946C1500C25865 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				C44BD0481CC5818B00F51AFA /* Drawable.hpp */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -331,6 +391,16 @@
 				C4B76E8C1CC11A2000A8A9DA /* basis_func.hpp */,
 			);
 			name = Functions;
+			sourceTree = "<group>";
+		};
+		C4AB85871CC3E3DB00A69438 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C4AB85881CC3E41300A69438 /* base.vertex.glsl */,
+				C4AB85891CC3E42400A69438 /* base.fragment.glsl */,
+				C4AB858B1CC3E4FB00A69438 /* Externs.hpp */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 		C4B634D81C9ECF0600D406C0 /* texcoord */ = {
@@ -390,8 +460,11 @@
 		C4B76E771CC105D700A8A9DA /* ChaosGLTest */ = {
 			isa = PBXGroup;
 			children = (
-				C4B76E7D1CC1071D00A8A9DA /* Templates */,
 				C4B76E781CC105D700A8A9DA /* main.cpp */,
+				C4F1FBD11CC160FB00443DB8 /* Classes */,
+				C4AB85871CC3E3DB00A69438 /* Shaders */,
+				C4F1FBD01CC1404C00443DB8 /* Structs */,
+				C4B76E7D1CC1071D00A8A9DA /* Templates */,
 			);
 			path = ChaosGLTest;
 			sourceTree = "<group>";
@@ -433,13 +506,13 @@
 		C4C1A8D11C9020AC00753C31 /* ChaosGL */ = {
 			isa = PBXGroup;
 			children = (
-				C445482B1C99C8060069E9F8 /* Templates */,
+				C4B634EE1C9F90B100D406C0 /* ChaosGL.cpp */,
+				C4B634E91C9F62D200D406C0 /* ChaosGL.hpp */,
+				C4AAD5FF1C944A7E00C25865 /* Classes */,
 				C4AAD6161C946FC300C25865 /* Functions */,
 				C4AAD6101C946C1500C25865 /* Interfaces */,
-				C4AAD5FF1C944A7E00C25865 /* Classes */,
 				C4AAD5CC1C92FCCC00C25865 /* Structs */,
-				C4B634E91C9F62D200D406C0 /* ChaosGL.hpp */,
-				C4B634EE1C9F90B100D406C0 /* ChaosGL.cpp */,
+				C445482B1C99C8060069E9F8 /* Templates */,
 			);
 			path = ChaosGL;
 			sourceTree = "<group>";
@@ -447,6 +520,7 @@
 		C4E4E61A1C8F23E400AC2C72 = {
 			isa = PBXGroup;
 			children = (
+				C4F1FBD31CC161B300443DB8 /* libglfw.3.1.dylib */,
 				C4AAD5531C919B0F00C25865 /* libgtest.a */,
 				C4E4E6A71C8F2AC100AC2C72 /* OpenGL.framework */,
 				C4E4E69E1C8F26D600AC2C72 /* ChaosCore.xcodeproj */,
@@ -471,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */,
+				C4AB85A61CC44C7400A69438 /* ChaosCoreTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -494,6 +569,23 @@
 			name = geom;
 			sourceTree = "<group>";
 		};
+		C4F1FBD01CC1404C00443DB8 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
+		C4F1FBD11CC160FB00443DB8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1FBD21CC1611200443DB8 /* AbstractTest.hpp */,
+				C4F1FBD51CC164FD00443DB8 /* Shader.hpp */,
+				C4AB85A31CC44C7300A69438 /* Program.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -508,13 +600,16 @@
 				C4F009E51C960369001BE121 /* Buffer.hpp in Headers */,
 				C4F009DA1C960326001BE121 /* size.hpp in Headers */,
 				C4F009D91C960326001BE121 /* rect.hpp in Headers */,
+				C44BD0421CC57CFD00F51AFA /* scissortest.hpp in Headers */,
 				C4B634E41C9F410200D406C0 /* Framebuffer.hpp in Headers */,
 				C4B635191CA0C7EE00D406C0 /* ChaosGL.hpp in Headers */,
+				C44BD0331CC5362300F51AFA /* depthtest.hpp in Headers */,
 				C4F009D71C960326001BE121 /* geom.hpp in Headers */,
 				C4F00A261C964DD5001BE121 /* tgeom.hpp in Headers */,
 				C4F009D41C960326001BE121 /* attrib_func.hpp in Headers */,
 				C4F009EB1C960369001BE121 /* Program.hpp in Headers */,
 				C4B634E81C9F61F200D406C0 /* Texture.hpp in Headers */,
+				C44BD03A1CC5707B00F51AFA /* stenciltest.hpp in Headers */,
 				C4F009EE1C960369001BE121 /* VertexShader.hpp in Headers */,
 				C4F00A0E1C9603C0001BE121 /* clearmask.hpp in Headers */,
 				C4F00A101C9603C0001BE121 /* depthmask.hpp in Headers */,
@@ -522,8 +617,8 @@
 				C4F009D61C960326001BE121 /* attrib.hpp in Headers */,
 				C4F009EA1C960369001BE121 /* GeometryShader.hpp in Headers */,
 				C4F009ED1C960369001BE121 /* Shader.hpp in Headers */,
-				C4F009E71C960369001BE121 /* Drawable.hpp in Headers */,
 				C4F009CC1C960304001BE121 /* string_func_glm.hpp in Headers */,
+				C44BD04A1CC5818B00F51AFA /* Drawable.hpp in Headers */,
 				C4F009D81C960326001BE121 /* primitive.hpp in Headers */,
 				C4B634ED1C9F6B3200D406C0 /* Texture2D.hpp in Headers */,
 				C4F00A0D1C9603C0001BE121 /* cap.hpp in Headers */,
@@ -562,6 +657,7 @@
 				C4B76E741CC105D700A8A9DA /* CopyFiles */,
 			);
 			buildRules = (
+				C4AB85861CC3E21100A69438 /* PBXBuildRule */,
 			);
 			dependencies = (
 				C4B76E851CC10D5900A8A9DA /* PBXTargetDependency */,
@@ -636,6 +732,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C4AB85A61CC44C7400A69438 /* ChaosCoreTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ChaosCoreTest;
+			remoteRef = C4AB85A51CC44C7400A69438 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C4E4E6A31C8F26D600AC2C72 /* libChaosCore.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -659,6 +762,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AB858D1CC3F48100A69438 /* base.vertex.glsl in Sources */,
+				C4AB858E1CC3F48100A69438 /* base.fragment.glsl in Sources */,
 				C4B76E791CC105D700A8A9DA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,15 +779,17 @@
 				C4B634EC1C9F6B3200D406C0 /* Texture2D.cpp in Sources */,
 				C4B634EF1C9F90B100D406C0 /* ChaosGL.cpp in Sources */,
 				C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */,
-				C4F009FB1C960382001BE121 /* Drawable.cpp in Sources */,
 				C4B634E71C9F61F200D406C0 /* Texture.cpp in Sources */,
+				C44BD0321CC5362300F51AFA /* depthtest.cpp in Sources */,
 				C4F009FD1C960382001BE121 /* FragmentShader.cpp in Sources */,
 				C4F00A001C960382001BE121 /* Renderpass.cpp in Sources */,
 				C4F009F91C960382001BE121 /* Buffer.cpp in Sources */,
 				C4F00A121C9603C0001BE121 /* cap.cpp in Sources */,
 				C4F00A011C960382001BE121 /* Shader.cpp in Sources */,
+				C44BD0411CC57CFD00F51AFA /* scissortest.cpp in Sources */,
 				C4F009FC1C960382001BE121 /* Exception.cpp in Sources */,
 				C4F009FF1C960382001BE121 /* Program.cpp in Sources */,
+				C44BD0391CC5707B00F51AFA /* stenciltest.cpp in Sources */,
 				C4F009FE1C960382001BE121 /* GeometryShader.cpp in Sources */,
 				C4F00A021C960382001BE121 /* VertexShader.cpp in Sources */,
 			);

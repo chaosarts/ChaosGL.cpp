@@ -9,8 +9,22 @@
 
 namespace chaosgl
 {
-
-		cap::cap(GLenum name, bool enable) : name(name), enabled(enable) {}
-
-		cap::~cap() {}
+	cap::cap (GLenum name) : name(name) {}
+	
+	cap::~cap () {}
+	
+	
+	GLenum cap::apply () const
+	{
+		glEnable(name);
+		_apply();
+		return glGetError();
+	}
+	
+	
+	GLenum cap::revert () const
+	{
+		glDisable(name);
+		return glGetError();
+	}
 } /* namespace ca */

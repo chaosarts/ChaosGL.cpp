@@ -6,9 +6,12 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-#include "attrib_list.hpp"
-#include "basis.hpp"
-#include "geom_list.hpp"
+//#include "attrib_list.hpp"
+//#include "basis.hpp"
+//#include "geom_list.hpp"
+
+#include "Shader.hpp"
+#include "Program.hpp"
 
 #include <glm/glm.hpp>
 #include <gtest/gtest.h>

@@ -14,13 +14,28 @@ namespace chaosgl
 {
 	struct clearmask
 	{
-	protected:
-		clearmask (GLbitfield field);
 	public:
 		const GLbitfield field;
+		
+		
+		/**
+		 *
+		 */
 		virtual void clear () = 0;
+		
+		
+		/**
+		 * Destroys the clearmask
+		 */
 		virtual ~clearmask();
+		
+	protected:
+		/**
+		 * Creates a new clear mask for given field
+		 * @param field
+		 */
+		clearmask (GLbitfield field);
 	};
 } /* namespace ca */
 
-#endif /* GLBITMASK_H_ */
+#endif /* ChaosGL_clearmask_hpp */
