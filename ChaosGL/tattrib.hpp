@@ -9,6 +9,7 @@
 #ifndef ChaosGL_tattrib_hpp
 #define ChaosGL_tattrib_hpp
 
+#include "Bufferable.hpp"
 #include <glm/glm.hpp>
 #include <OpenGL/OpenGL.h>
 #include <OpenGL/gl3.h>
@@ -16,7 +17,7 @@
 namespace chaosgl
 {
 	template<typename T>
-	struct tattrib
+	struct tattrib : public virtual Bufferable
 	{
 	public:
 		
@@ -27,16 +28,28 @@ namespace chaosgl
 		typedef T VertexType;
 		
 		
-		/**
-		 * Indicates how to store data
-		 */
+		/** Indicates how to store data */
 		GLenum usage = GL_STATIC_DRAW;
+		
+		
+		/**
+		 * Creates a new vertex attribute container
+		 */
+		tattrib () : chaosgl::Bufferable(sizeof(VertexType))
+		{
+		}
 		
 		
 		/** 
 		 * Destroys the attribute
 		 */
 		virtual ~tattrib () {};
+		
+		
+		virtual void* getData (int index, GLenum target = GL_ARRAY_BUFFER) const
+		{
+			return &(this->getValue(index, target));
+		}
 		
 		
 		/** 

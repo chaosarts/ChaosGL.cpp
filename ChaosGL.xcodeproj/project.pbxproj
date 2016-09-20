@@ -14,6 +14,10 @@
 		C44BD0411CC57CFD00F51AFA /* scissortest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD03F1CC57CFD00F51AFA /* scissortest.cpp */; };
 		C44BD0421CC57CFD00F51AFA /* scissortest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0401CC57CFD00F51AFA /* scissortest.hpp */; };
 		C44BD04A1CC5818B00F51AFA /* Drawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0481CC5818B00F51AFA /* Drawable.hpp */; };
+		C44BD07C1CC5A96F00F51AFA /* bufdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD07A1CC5A96F00F51AFA /* bufdata.cpp */; };
+		C44BD07D1CC5A96F00F51AFA /* bufdata.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD07B1CC5A96F00F51AFA /* bufdata.hpp */; };
+		C44BD0821CC5B09000F51AFA /* Bufferable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44BD0801CC5B09000F51AFA /* Bufferable.cpp */; };
+		C44BD0831CC5B09000F51AFA /* Bufferable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C44BD0811CC5B09000F51AFA /* Bufferable.hpp */; };
 		C4AB858D1CC3F48100A69438 /* base.vertex.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C4AB85881CC3E41300A69438 /* base.vertex.glsl */; };
 		C4AB858E1CC3F48100A69438 /* base.fragment.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C4AB85891CC3E42400A69438 /* base.fragment.glsl */; };
 		C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B634E11C9F410200D406C0 /* Framebuffer.cpp */; };
@@ -177,6 +181,10 @@
 		C44BD03F1CC57CFD00F51AFA /* scissortest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scissortest.cpp; sourceTree = "<group>"; };
 		C44BD0401CC57CFD00F51AFA /* scissortest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scissortest.hpp; sourceTree = "<group>"; };
 		C44BD0481CC5818B00F51AFA /* Drawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
+		C44BD07A1CC5A96F00F51AFA /* bufdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bufdata.cpp; sourceTree = "<group>"; };
+		C44BD07B1CC5A96F00F51AFA /* bufdata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bufdata.hpp; sourceTree = "<group>"; };
+		C44BD0801CC5B09000F51AFA /* Bufferable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bufferable.cpp; sourceTree = "<group>"; };
+		C44BD0811CC5B09000F51AFA /* Bufferable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bufferable.hpp; sourceTree = "<group>"; };
 		C4AAD5531C919B0F00C25865 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
 		C4AB85881CC3E41300A69438 /* base.vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.vertex.glsl; sourceTree = "<group>"; };
 		C4AB85891CC3E42400A69438 /* base.fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.fragment.glsl; sourceTree = "<group>"; };
@@ -342,6 +350,8 @@
 				C4F00A031C9603C0001BE121 /* cap.hpp */,
 				C4F00A091C9603C0001BE121 /* clearmask.cpp */,
 				C4F00A041C9603C0001BE121 /* clearmask.hpp */,
+				C44BD07A1CC5A96F00F51AFA /* bufdata.cpp */,
+				C44BD07B1CC5A96F00F51AFA /* bufdata.hpp */,
 			);
 			name = Structs;
 			sourceTree = "<group>";
@@ -351,6 +361,8 @@
 			children = (
 				C4F009EF1C960382001BE121 /* Buffer.cpp */,
 				C4F009DB1C960369001BE121 /* Buffer.hpp */,
+				C44BD0801CC5B09000F51AFA /* Bufferable.cpp */,
+				C44BD0811CC5B09000F51AFA /* Bufferable.hpp */,
 				C4F009F21C960382001BE121 /* Exception.cpp */,
 				C4F009DE1C960369001BE121 /* Exception.hpp */,
 				C4F009F31C960382001BE121 /* FragmentShader.cpp */,
@@ -597,9 +609,11 @@
 				C4F00A0F1C9603C0001BE121 /* colormask.hpp in Headers */,
 				C4F00A111C9603C0001BE121 /* stencilmask.hpp in Headers */,
 				C4F009EC1C960369001BE121 /* Renderpass.hpp in Headers */,
+				C44BD07D1CC5A96F00F51AFA /* bufdata.hpp in Headers */,
 				C4F009E51C960369001BE121 /* Buffer.hpp in Headers */,
 				C4F009DA1C960326001BE121 /* size.hpp in Headers */,
 				C4F009D91C960326001BE121 /* rect.hpp in Headers */,
+				C44BD0831CC5B09000F51AFA /* Bufferable.hpp in Headers */,
 				C44BD0421CC57CFD00F51AFA /* scissortest.hpp in Headers */,
 				C4B634E41C9F410200D406C0 /* Framebuffer.hpp in Headers */,
 				C4B635191CA0C7EE00D406C0 /* ChaosGL.hpp in Headers */,
@@ -775,7 +789,9 @@
 				C4F00A141C9603C0001BE121 /* colormask.cpp in Sources */,
 				C4F00A161C9603C0001BE121 /* stencilmask.cpp in Sources */,
 				C4F00A131C9603C0001BE121 /* clearmask.cpp in Sources */,
+				C44BD0821CC5B09000F51AFA /* Bufferable.cpp in Sources */,
 				C4F00A151C9603C0001BE121 /* depthmask.cpp in Sources */,
+				C44BD07C1CC5A96F00F51AFA /* bufdata.cpp in Sources */,
 				C4B634EC1C9F6B3200D406C0 /* Texture2D.cpp in Sources */,
 				C4B634EF1C9F90B100D406C0 /* ChaosGL.cpp in Sources */,
 				C4B634E31C9F410200D406C0 /* Framebuffer.cpp in Sources */,

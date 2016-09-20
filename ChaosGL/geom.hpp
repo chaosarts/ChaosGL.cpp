@@ -14,14 +14,25 @@
 
 namespace chaosgl
 {
-	typedef tgeom_list<float, glm::lowp> lowp_geom_list;
-	typedef tgeom_list<float, glm::mediump> mediump_geom_list;
-	typedef tgeom_list<float, glm::highp> highp_geom_list;
+	typedef tgeom<float, glm::lowp> float_lowp_geom;
+	typedef tgeom<float, glm::mediump> float_mediump_geom;
+	typedef tgeom<float, glm::highp> float_highp_geom;
+	typedef tgeom<float, glm::defaultp> float_geom;
 	
-	typedef lowp_geom_list lowp_geom;
-	typedef mediump_geom_list mediump_geom;
-	typedef highp_geom_list highp_geom;
-	typedef highp_geom geom;
+	typedef float_lowp_geom lowp_geom;
+	typedef float_mediump_geom mediump_geom;
+	typedef float_highp_geom highp_geom;
+	typedef float_geom geom;
+	
+	typedef tgeom_list<float, glm::lowp> float_lowp_geom_list;
+	typedef tgeom_list<float, glm::mediump> float_mediump_geom_list;
+	typedef tgeom_list<float, glm::highp> float_highp_geom_list;
+	typedef tgeom_list<float, glm::defaultp> float_geom_list;
+	
+	typedef float_lowp_geom_list lowp_geom_list;
+	typedef float_mediump_geom_list mediump_geom_list;
+	typedef float_highp_geom_list highp_geom_list;
+	typedef float_geom_list geom_list;
 }
 
 #endif
